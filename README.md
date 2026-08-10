@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="profile.jpg" width="200" height="200" style="border-radius: 50%; border: 4px solid #00d4ff; box-shadow: 0 0 20px rgba(0,212,255,0.5);" alt="Wahyu Nur Iman" onerror="this.src='https://ui-avatars.com/api/?name=Wahyu+Nur+Iman&background=001524&color=00d4ff&size=200'">
+  <img src="profile.jpg" width="200" height="200" style="border-radius: 50%; border: 4px solid #00d4ff; box-shadow: 0 0 20px rgba(0,212,255,0.5);" alt="Foto Wahyu Nur Iman (Harap upload profile.jpg di repo ini)" onerror="this.src='https://ui-avatars.com/api/?name=Wahyu+Nur+Iman&background=001524&color=00d4ff&size=200'">
   
   <h1>👨‍💻 Wahyu Nur Iman</h1>
   <h3>Data Analyst & Automation Developer</h3>
@@ -9,9 +9,10 @@
   </p>
 
   <p>
-    <a href="https://bit.ly/PortofolioWahyuNurIman"><img src="https://img.shields.io/badge/Canva-Portfolio-00C4CC?style=for-the-badge&logo=canva&logoColor=white" alt="Portfolio"></a>
-    <a href="https://github.com/wahyunuriman999"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-    <a href="https://www.linkedin.com/in/wahyu-nur-iman-23425b210"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+    <a href="https://wahyunuriman999.github.io/Curriculum-Vitae-Wahyu-Nur-Iman/"><img src="https://img.shields.io/badge/Lihat_Web_CV_Interaktif-FF0000?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Web CV"></a>
+    <a href="https://bit.ly/PortofolioWahyuNurIman"><img src="https://img.shields.io/badge/Canva_Portfolio-00C4CC?style=for-the-badge&logo=canva&logoColor=white" alt="Portfolio"></a>
+    <a href="https://github.com/wahyunuriman999"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+    <a href="https://www.linkedin.com/in/wahyu-nur-iman-747756290/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   </p>
   
   <p>
@@ -23,35 +24,30 @@
 
 ## 💼 Pengalaman Kerja (CV)
 
-<details>
-<summary><b>🔥 Data Analyst - PT. Impact Power Mandiri (Staffinc Group)</b> <i>(Sep 2023 - Juni 2026)</i></summary>
+### 🔥 Data Analyst - PT. Impact Power Mandiri (Staffinc Group) 
+*(Sep 2023 - Juni 2026)*
 
-<br>
-<blockquote>
 Mengelola proses end-to-end manpower project (hiring hingga deployment), memimpin product training (Appsheets, IDR & Istrike), dan mengembangkan dashboard reporting.
-</blockquote>
-
-- **Payroll & Admin**: Mengontrol payroll, rekap absensi, Cash Advance (CA), reimbursement, legal ketenagakerjaan (PKWT), serta BPJS.
-- **Monitoring & Invoicing**: Memonitor operasional secara berkala, koordinasi intensif dengan klien, dan mengelola administrasi invoicing.
+- **Payroll & Admin**: Mengontrol payroll, rekap absensi, perhitungan gaji, pembuatan slip gaji, proses disbursement, Cash Advance (CA), reimbursement, request payment, legal ketenagakerjaan (PKWT), serta BPJS.
+- **Monitoring & Invoicing**: Memonitor performa dan operasional secara berkala, koordinasi intensif dengan internal & klien, dan mengelola administrasi invoicing (penagihan).
 - **PIC Event**: Menyiapkan POSM dan memonitor kelancaran event.
-- **Klien**: *Sinde, FKS Food, Shiseido, Diamond & Co, Beiersdorf, Skintific, Fumakilla NoMos, Greenfields, Otsuka Pocari, Kino, Garudafood.*
-</details>
+- **Klien yang Ditangani**: Sinde, FKS Food, Shiseido, Diamond & Co, Beiersdorf, Skintific, Fumakilla NoMos, Greenfields, Otsuka Pocari, Kino, Garudafood.
 
-<details>
-<summary><b>🏥 Medical Record Staff - PT. MH Thamrin (Radjak Hospital)</b> <i>(Feb 2022 - Ags 2023)</i></summary>
+### 🏥 Medical Record Staff - PT. MH Thamrin (Radjak Hospital) 
+*(Feb 2022 - Ags 2023)*
 
-<br>
-
-- Mengelola administrasi dan registrasi rekam medis pasien baru.
-- Melakukan input dan update data pasien ke dalam sistem.
-- Menyiapkan dokumen faktur dan surat kontrol pasien, serta melapor ke dokter.
-</details>
+- Mengelola administrasi pembuatan dan registrasi rekam medis pasien baru.
+- Melakukan input dan update data pasien ke dalam sistem secara akurat dan tepat waktu.
+- Menyiapkan dokumen pendukung seperti faktur dan surat kontrol pasien.
+- Melakukan pelaporan status pasien kepada dokter dan tim medis untuk kebutuhan tindak lanjut pemeriksaan.
+- Merekap dan mengelola data status rawat pasien secara terstruktur.
+- Memastikan kelengkapan dan kerapihan dokumen rekam medis sesuai standar operasional rumah sakit.
 
 ---
 
 ## 🚀 Portofolio & Otomatisasi (Projects)
 
-Berikut adalah beberapa *tools automation* dan sistem yang telah saya buat untuk mempermudah operasional perusahaan:
+Berikut adalah *tools automation* dan sistem yang telah saya buat untuk mempermudah operasional perusahaan:
 
 <table>
   <tr>
@@ -78,6 +74,19 @@ Berikut adalah beberapa *tools automation* dan sistem yang telah saya buat untuk
 
 ---
 
+## 📂 Repositori GitHub Saya
+
+Kumpulan proyek dan sistem yang saya bangun di GitHub:
+
+- 🛡️ **[AEGIS-ELITE](https://github.com/wahyunuriman999/AEGIS-ELITE)** - *Framework/Plugin sistem arsitektur AI.*
+- 🧠 **[AEGIS-Core](https://github.com/wahyunuriman999/AEGIS-Core)** - *Cognitive runtime layer for AI engineering. Adds planning, memory hierarchy, and deterministic execution on top of any language model.*
+- ⚙️ **[Ruhci-Claude-Engine](https://github.com/wahyunuriman999/Ruhci-Claude-Engine)** - *Deterministic Context Intelligence Engine for AI Coding Agents.*
+- 🎨 **[Designer-Mind-Skill](https://github.com/wahyunuriman999/Designer-Mind-Skill)** - *Skill kustom untuk UI/UX design intelligence.*
+- 📊 **[Auto-Create-Report](https://github.com/wahyunuriman999/Auto-Create-Report)** - *Otomatisasi pembuatan laporan.*
+- 👨‍💻 **[ProgrammerMager](https://github.com/wahyunuriman999/ProgrammerMager)** - *AI Agent dengan persona software engineer kelas dunia.*
+
+---
+
 ## 🛠️ Tech Stack & Keahlian
 
 <div align="center">
@@ -99,14 +108,9 @@ Berikut adalah beberapa *tools automation* dan sistem yang telah saya buat untuk
 ---
 
 ## 🎓 Pendidikan
-- **SMK Negri 1 Rengel Tuban** — Teknik Sepeda Motor *(2017 – 2020)*
+- **SMK Negri 1 Rengel Tuban** — Teknik Sepeda Motor *(Juli 2017 – Mei 2020)*
 
 ---
-
-<div align="center">
-  <h3>🌟 Interactive Web CV</h3>
-  <p>Silakan buka file <code>index.html</code> pada repositori ini atau kunjungi <b>GitHub Pages</b> untuk melihat versi Web Interaktif Premium dari profil ini.</p>
-</div>
 
 <details>
 <summary><b>🗺️ Product Map (AEGIS Architecture)</b></summary>
