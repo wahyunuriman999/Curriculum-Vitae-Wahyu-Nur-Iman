@@ -6,13 +6,13 @@
   
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wahyu-nur-iman-747756290/)
   [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wahyunuriman999@gmail.com)
-  [![Web CV](https://img.shields.io/badge/Live_Web_CV-10b981?style=for-the-badge&logo=google-chrome&logoColor=white)](https://wahyunuriman999.github.io/Curriculum-Vitae-Wahyu-Nur-Iman/)
+  [![Web CV](https://img.shields.io/badge/Live_Web_CV-10b981?style=for-the-badge&logo=google-chrome&logoColor=white)](https://wahyunuriman999.github.io/Curriculum-Vitae-Wahyu-Nur-Iman/#portfolio)
 </div>
 
 ---
 
 ## 🌐 Live Web CV
-**[Klik di sini untuk melihat versi Web Interaktif & Premium](https://wahyunuriman999.github.io/Curriculum-Vitae-Wahyu-Nur-Iman/)**  
+**[Klik di sini untuk melihat Portfolio Web Interaktif & Premium](https://wahyunuriman999.github.io/Curriculum-Vitae-Wahyu-Nur-Iman/#portfolio)**  
 *(Dibangun dengan desain Corporate Minimalist & Designer Mind OS Animation)*
 
 ---
