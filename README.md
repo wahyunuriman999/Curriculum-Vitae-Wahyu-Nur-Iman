@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="profile.jpg" width="200" height="200" style="border-radius: 50%; border: 4px solid #00d4ff; box-shadow: 0 0 20px rgba(0,212,255,0.5);" alt="Foto Wahyu Nur Iman (Harap upload profile.jpg di repo ini)" onerror="this.src='https://ui-avatars.com/api/?name=Wahyu+Nur+Iman&background=001524&color=00d4ff&size=200'">
+  <img src="profile.jpg" width="200" height="200" style="border-radius: 50%; object-fit: cover; border: 4px solid #00f0ff; box-shadow: 0 0 15px #00f0ff; margin-bottom: 15px;" alt="Foto Wahyu Nur Iman (Harap upload profile.jpg di repo ini)" onerror="this.src='https://ui-avatars.com/api/?name=Wahyu+Nur+Iman&background=001524&color=00d4ff&size=200'">
   
   <h1>👨‍💻 Wahyu Nur Iman</h1>
   <h3>Data Analyst & Automation Developer</h3>
