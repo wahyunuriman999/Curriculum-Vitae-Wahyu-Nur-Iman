@@ -1,5 +1,5 @@
-# Wahyu Nur Iman
-### Data Analyst & Automation Specialist
+<h1 align="center">Wahyu Nur Iman</h1>
+<h3 align="center">Data Analyst</h3>
 
 <div align="center">
   
