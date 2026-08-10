@@ -11,9 +11,9 @@
     --text-main: #0a0a0a;
     --text-dim: #475569;
     
-    --accent-1: #06b6d4; /* Teal/Cyan */
-    --accent-2: #ea580c; /* Copper-orange */
-    --accent-hover: #0891b2;
+    --accent-1: #10b981; /* Emerald Green */
+    --accent-2: #84cc16; /* Lime Green */
+    --accent-hover: #059669;
     
     --font-sans: 'Plus Jakarta Sans', sans-serif;
     
@@ -31,9 +31,9 @@
         --text-main: #fafafa;
         --text-dim: #a3a3a3;
         
-        --accent-1: #22d3ee; /* Cyan primary accent */
-        --accent-2: #f97316; /* Copper-orange secondary accent */
-        --accent-hover: #06b6d4;
+        --accent-1: #34d399; /* Light Emerald */
+        --accent-2: #a3e635; /* Light Lime */
+        --accent-hover: #10b981;
     }
 }
 
