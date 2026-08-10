@@ -297,6 +297,17 @@
                         el.classList.add('active');
                     }
                 });
+                
+                // Handle hash jump on load
+                if (window.location.hash) {
+                    const target = document.querySelector(window.location.hash);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80, // Offset for navbar
+                            behavior: 'smooth'
+                        });
+                    }
+                }
             }, 100);
         });
     </script>

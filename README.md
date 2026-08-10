@@ -12,7 +12,7 @@
 ---
 
 ## 🌐 Live Web CV
-**[Klik di sini untuk melihat Portfolio Web Interaktif & Premium](https://wahyunuriman999.github.io/Curriculum-Vitae-Wahyu-Nur-Iman/#portfolio)**  
+**[klik disini untuk melihat](https://wahyunuriman999.github.io/Curriculum-Vitae-Wahyu-Nur-Iman/#portfolio)**  
 *(Dibangun dengan desain Corporate Minimalist & Designer Mind OS Animation)*
 
 ---
