@@ -20,22 +20,7 @@
     --transition: all 0.3s ease;
 }
 
-/* Dark Mode Support for OS Preference */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-main: #0a0a0a; /* Deep black from Designer Mind */
-        --bg-card: #121212; /* Graphite surface */
-        --border-light: #262626;
-        --border-hover: #404040;
-        
-        --text-main: #fafafa;
-        --text-dim: #a3a3a3;
-        
-        --accent-1: #34d399; /* Light Emerald */
-        --accent-2: #a3e635; /* Light Lime */
-        --accent-hover: #10b981;
-    }
-}
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -190,12 +175,7 @@ footer { padding: 40px 0; margin-top: 40px; border-top: 1px solid var(--border-l
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
-@media (prefers-color-scheme: dark) {
-    .navbar.scrolled {
-        background: rgba(10, 10, 10, 0.85);
-        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-}
+
 
 /* Image float animation */
 .profile-img { animation: floatImage 6s ease-in-out infinite; }

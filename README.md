@@ -2,7 +2,6 @@
 ### Data Analyst & Automation Specialist
 
 <div align="center">
-  <img src="profile_white.jpg" width="200" style="border-radius:50%; margin: 20px 0;">
   
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wahyu-nur-iman-747756290/)
   [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wahyunuriman999@gmail.com)
