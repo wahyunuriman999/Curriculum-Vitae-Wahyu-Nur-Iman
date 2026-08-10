@@ -24,14 +24,22 @@
 
 ## 💼 Pengalaman Kerja (CV)
 
-### 🔥 Data Analyst - PT. Impact Power Mandiri (Staffinc Group) 
-*(Sep 2023 - Juni 2026)*
+### 🔥 Data Analyst - PT. Impact Power Mandiri (Staffinc Group)
+*(September 2023 - Juni 2026)*
 
-Mengelola proses end-to-end manpower project (hiring hingga deployment), memimpin product training (Appsheets, IDR & Istrike), dan mengembangkan dashboard reporting.
-- **Payroll & Admin**: Mengontrol payroll, rekap absensi, perhitungan gaji, pembuatan slip gaji, proses disbursement, Cash Advance (CA), reimbursement, request payment, legal ketenagakerjaan (PKWT), serta BPJS.
-- **Monitoring & Invoicing**: Memonitor performa dan operasional secara berkala, koordinasi intensif dengan internal & klien, dan mengelola administrasi invoicing (penagihan).
-- **PIC Event**: Menyiapkan POSM dan memonitor kelancaran event.
-- **Klien yang Ditangani**: Sinde, FKS Food, Shiseido, Diamond & Co, Beiersdorf, Skintific, Fumakilla NoMos, Greenfields, Otsuka Pocari, Kino, Garudafood.
+- Mengelola proses end-to-end manpower project, mulai dari hiring hingga deployment.
+- Memimpin pelaksanaan product training dan training sistem (Appsheets, IDR & Istrike) untuk memastikan kesiapan operasional tim.
+- Mengembangkan dan mengelola dashboard performa serta reporting (daily, weekly, monthly) sebagai dasar evaluasi dan pengambilan keputusan.
+- Mengontrol administrasi payroll: rekap absensi, perhitungan gaji, pembuatan slip gaji, serta proses disbursement melalui Staffing Tools.
+- Mengelola pengajuan Cash Advance (CA), reimbursement, dan request payment untuk mendukung kelancaran operasional project.
+- Menyusun dan mengelola dokumen legal ketenagakerjaan (PKWT) serta administrasi BPJS Ketenagakerjaan & BPJS Kesehatan.
+- Mengelola database manpower secara terstruktur untuk memastikan akurasi data dan kelengkapan administrasi.
+- Melakukan koordinasi intensif dengan internal management, tim lapangan, dan klien untuk memastikan target project tercapai.
+- Melakukan monitoring performa dan operasional project secara berkala.
+- Mengelola administrasi invoicing dan memastikan kelengkapan dokumen penagihan kepada klien.
+- Menyiapkan POSM dan produksi segala kebutuhan event & memonitor kelancaran event (Sebagai PIC event).
+- **Tools Automation:** Membuat tools pribadi (Fuzzy Lookup & Similarity Matching Nama, Google Apps Script Automation, WEB cek rekening, LLM local menggunakan Api key & ollama & VBA Toolkit).
+- **Project Handle:** Sinde, FKS Food, Shiseido, Diamond & Co, Beiersdorf, Skintific, Fumakilla NoMos, Greenfields, Otsuka Pocari, Kino, Garudafood.
 
 ### 🏥 Medical Record Staff - PT. MH Thamrin (Radjak Hospital) 
 *(Feb 2022 - Ags 2023)*
