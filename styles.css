@@ -163,6 +163,57 @@ footer { padding: 40px 0; margin-top: 40px; border-top: 1px solid var(--border-l
 .footer-content { max-width: 1000px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; color: var(--text-dim); font-size: 0.9rem; }
 .footer-logo { font-weight: 700; font-size: 1.1rem; color: var(--text-main); }
 
+/* Animations & Interactivity */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay for staggered animations */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+
+/* Dynamic Navbar on Scroll */
+.navbar { transition: background 0.4s ease, backdrop-filter 0.4s ease, padding 0.4s ease, border-color 0.4s ease; border-color: transparent; }
+.navbar.scrolled {
+    background: rgba(248, 250, 252, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-light);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar.scrolled {
+        background: rgba(10, 10, 10, 0.85);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+}
+
+/* Image float animation */
+.profile-img { animation: floatImage 6s ease-in-out infinite; }
+@keyframes floatImage {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Card Glow Effect */
+.portfolio-card { position: relative; overflow: hidden; z-index: 1; }
+.portfolio-card::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at center, rgba(16, 185, 129, 0.05) 0%, transparent 60%);
+    opacity: 0; transition: opacity 0.4s ease; z-index: -1; pointer-events: none;
+}
+.portfolio-card:hover::before { opacity: 1; }
+
 /* Responsive */
 @media (max-width: 900px) {
     .hero-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
