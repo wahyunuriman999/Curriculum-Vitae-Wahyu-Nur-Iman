@@ -3,216 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wahyu Nur Iman | Interactive CV</title>
-    <meta name="description" content="Curriculum Vitae of Wahyu Nur Iman, Data Analyst and Software Developer.">
+    <title>Wahyu Nur Iman | Data Analyst</title>
+    <meta name="description" content="Curriculum Vitae Wahyu Nur Iman - Data Analyst">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="cursor"></div>
-    <div id="cursor-follower"></div>
-    
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">WNI<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="about" class="section hero-section">
-            <div class="hero-content">
-                <div class="hero-text-content reveal">
-                    <p class="greeting">HELLO, I AM</p>
-                    <h1 class="hero-title">Wahyu Nur<br><span class="highlight">Iman</span></h1>
-                    <div class="typewriter-container">
-                        <span id="type-text"></span><span class="type-cursor">|</span>
-                    </div>
-                    <p class="hero-description">
-                        Data Analyst yang berorientasi pada hasil dengan pengalaman dalam pengelolaan manpower, administrasi payroll, serta reporting. Berpengalaman dalam mengelola data secara sistematis dan mendukung operasional project end-to-end.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="mailto:wahyunuriman999@gmail.com" class="btn btn-primary">Contact Me</a>
-                        <a href="https://bit.ly/PortofolioWahyuNurIman" target="_blank" class="btn btn-secondary">View Portfolio</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/wahyunuriman999" target="_blank" aria-label="GitHub">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/wahyu-nur-iman-23425b210" target="_blank" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </a>
-                        <a href="https://wahyunuriman999.github.io/porto/" target="_blank" aria-label="Website">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                        </a>
-                    </div>
+    <div class="noise-overlay"></div>
+
+    <div class="container">
+        <!-- HEADER SECTION -->
+        <header class="glass-panel reveal">
+            <div class="header-content">
+                <div class="profile-img-container">
+                    <!-- The user will drop their profile.jpg here -->
+                    <img src="profile.jpg" alt="Wahyu Nur Iman" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Wahyu+Nur+Iman&background=001524&color=00d4ff&size=150'">
                 </div>
-                <div class="hero-image-container reveal">
-                    <div class="image-wrapper">
-                        <!-- Profil photo styling using CSS -->
-                        <img src="profile.jpg" alt="Wahyu Nur Iman" class="profile-img" onerror="this.src='https://via.placeholder.com/400x500/0a0a0a/00e5ff?text=WNI'">
-                        <div class="glass-card aesthetic-card float-anim">
-                            <span class="stat-value">3+</span>
-                            <span class="stat-label">Years<br>Experience</span>
-                        </div>
+                <div class="header-text">
+                    <h1 class="glitch-text" data-text="Wahyu Nur Iman">Wahyu Nur Iman</h1>
+                    <h2 class="typewriter">Data Analyst</h2>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:wahyunuriman999@gmail.com"><i class="fas fa-envelope"></i> wahyunuriman999@gmail.com</a>
+                        <a href="tel:0881011322462"><i class="fas fa-phone"></i> 0881011322462</a>
+                        <span><i class="fas fa-map-marker-alt"></i> Pondok Cabe, Tangerang Selatan</span>
+                        <a href="https://bit.ly/PortofolioWahyuNurIman" target="_blank"><i class="fas fa-link"></i> Portfolio</a>
                     </div>
                 </div>
             </div>
+        </header>
+
+        <!-- ABOUT SECTION -->
+        <section class="glass-panel reveal">
+            <h3 class="section-title">About Me <span class="neon-line"></span></h3>
+            <p>
+                Data Analyst yang berorientasi pada hasil dengan pengalaman dalam pengelolaan manpower, administrasi payroll, serta reporting dan monitoring project. Berpengalaman dalam mengelola data secara sistematis, memastikan akurasi administrasi, serta mendukung operasional project secara end-to-end. Memiliki kemampuan analisis, koordinasi lintas tim, dan adaptif terhadap sistem kerja berbasis digital. Berkomitmen untuk memberikan kontribusi maksimal dalam meningkatkan efisiensi operasional dan kualitas administrasi perusahaan.
+            </p>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <h2 class="section-title reveal">Professional <span class="highlight">Experience</span></h2>
+        <!-- EXPERIENCE SECTION -->
+        <section class="glass-panel reveal">
+            <h3 class="section-title">Experience <span class="neon-line"></span></h3>
+            
             <div class="timeline">
-                
-                <div class="timeline-item reveal">
+                <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-panel">
-                        <span class="timeline-date">Sep 2023 - Jun 2026</span>
-                        <h3 class="timeline-role">Data Analyst</h3>
-                        <h4 class="timeline-company">PT. Impact Power Mandiri (Staffinc Group)</h4>
-                        <ul class="timeline-list">
-                            <li>Mengelola proses end-to-end manpower project, dari hiring hingga deployment.</li>
-                            <li>Mengembangkan dashboard performa dan reporting (daily, weekly, monthly).</li>
-                            <li>Mengontrol administrasi payroll, rekap absensi, dan request payment.</li>
-                            <li>Membuat tools pribadi (Fuzzy Lookup, App Script, Vibe Coding, LLM Local) untuk automasi.</li>
-                            <li>Project Handle: Sinde, FKS Food, Shiseido, Diamond & Co, Skintific, dll.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-panel">
-                        <span class="timeline-date">Feb 2022 - Aug 2023</span>
-                        <h3 class="timeline-role">Medical Record Staff</h3>
-                        <h4 class="timeline-company">PT. MH Thamrin (Radjak Hospital)</h4>
-                        <ul class="timeline-list">
-                            <li>Mengelola administrasi pembuatan dan registrasi rekam medis pasien baru.</li>
-                            <li>Melakukan input dan update data pasien ke dalam sistem.</li>
-                            <li>Merekap dan mengelola data status rawat pasien secara terstruktur.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-panel">
-                        <span class="timeline-date">2020 - 2021</span>
-                        <h3 class="timeline-role">Freelance Projects</h3>
-                        <h4 class="timeline-company">Independent</h4>
-                        <ul class="timeline-list">
-                            <li>Membuat Sistem Keamanan Rumah dengan Fingerprint berbasis IoT (Arduino & NodeMCU).</li>
-                            <li>Mendesain Mockup UI Sistem SIM, Perpustakaan, dan Manajemen Proyek IT.</li>
-                            <li>Partisipasi dalam event Capture The Flag (CTF) Gemastik 2020.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2 class="section-title reveal">Technical <span class="highlight">Skills</span></h2>
-            <div class="skills-grid">
-                
-                <div class="skill-category glass-panel reveal">
-                    <h3>Data & Automation</h3>
-                    <div class="tags">
-                        <span class="tag">Microsoft Excel (Advanced)</span>
-                        <span class="tag">Google Apps Script</span>
-                        <span class="tag">Basic Python</span>
-                        <span class="tag">VBA Toolkit</span>
-                        <span class="tag">Vibe Coding</span>
-                        <span class="tag">LLM Local</span>
-                    </div>
-                </div>
-
-                <div class="skill-category glass-panel reveal">
-                    <h3>Systems & Administration</h3>
-                    <div class="tags">
-                        <span class="tag">Appsheets</span>
-                        <span class="tag">Istrike & IDR System</span>
-                        <span class="tag">Staffinc Tools</span>
-                        <span class="tag">JotForm</span>
-                        <span class="tag">Cloudinary</span>
-                    </div>
-                </div>
-
-                <div class="skill-category glass-panel reveal">
-                    <h3>Engineering & Cloud</h3>
-                    <div class="tags">
-                        <span class="tag">Linux</span>
-                        <span class="tag">Hardware Engineering</span>
-                        <span class="tag">AWS / Azure</span>
-                        <span class="tag">PowerShell & CMD</span>
-                        <span class="tag">Github</span>
-                        <span class="tag">IoT (Arduino)</span>
-                    </div>
-                </div>
-
-                <div class="skill-category glass-panel reveal">
-                    <h3>Design & UI/UX</h3>
-                    <div class="tags">
-                        <span class="tag">UI / UX Design</span>
-                        <span class="tag">HTML / CSS</span>
-                        <span class="tag">CorelDraw</span>
-                        <span class="tag">Photoshop</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <h2 class="section-title reveal">Education & <span class="highlight">Organization</span></h2>
-            <div class="education-grid">
-                <div class="edu-card glass-panel reveal">
-                    <div class="edu-header">
-                        <h3>Telkom University</h3>
-                        <span class="edu-date">Aug 2019 - Aug 2022</span>
-                    </div>
-                    <p class="edu-degree">D3 Teknologi Komputer</p>
-                    <p class="edu-desc">Berfokus pada perancangan sistem perangkat keras/lunak, jaringan dan cloud.</p>
-                    <div class="edu-orgs">
-                        <h4>Pengalaman Organisasi & Kepanitiaan:</h4>
+                    <div class="timeline-content">
+                        <h4>Data Analyst</h4>
+                        <h5>PT. Impact Power Mandiri (Staffinc Group) | <span>September 2023 - Juni 2026</span></h5>
                         <ul>
-                            <li>Ketua Komunitas Mahasiswa Tegal di Bandung</li>
-                            <li>Wakil Ketua 2 - MUBES D3TK 2020</li>
-                            <li>Sekretaris - Pemira D3TK 2020</li>
-                            <li>Pemateri - Peminatan Desain UI/UX & Grafis D3TK 2021</li>
-                            <li>Anggota HIMA Diploma Telekomunikasi (Kominfo & Litbang)</li>
+                            <li>Mengelola proses end-to-end manpower project, mulai dari hiring hingga deployment.</li>
+                            <li>Memimpin pelaksanaan product training dan training sistem (Appsheets, IDR & Istrike) untuk memastikan kesiapan operasional tim.</li>
+                            <li>Mengembangkan dan mengelola dashboard performa serta reporting (daily, weekly, monthly) sebagai dasar evaluasi dan pengambilan keputusan.</li>
+                            <li>Mengontrol administrasi payroll: rekap absensi, perhitungan gaji, pembuatan slip gaji, serta proses disbursement melalui Staffing Tools.</li>
+                            <li>Mengelola pengajuan Cash Advance (CA), reimbursement, dan request payment.</li>
+                            <li>Menyusun dan mengelola dokumen legal ketenagakerjaan (PKWT) serta administrasi BPJS Ketenagakerjaan & BPJS Kesehatan.</li>
+                            <li>Mengelola database manpower secara terstruktur untuk memastikan akurasi data dan kelengkapan administrasi.</li>
+                            <li>Melakukan koordinasi intensif dengan internal management, tim lapangan, dan klien.</li>
+                            <li>Melakukan monitoring performa dan operasional project secara berkala.</li>
+                            <li>Mengelola administrasi invoicing dan kelengkapan dokumen penagihan.</li>
+                            <li>Menyiapkan POSM dan produksi kebutuhan event & memonitor kelancaran event (Sebagai PIC event).</li>
+                            <li><strong>Tools Automation:</strong> Membuat tools pribadi (Fuzzy Lookup & Similarity Matching Nama, Google Apps Script Automation, WEB cek rekening, LLM local menggunakan Api key & ollama & VBA Toolkit).</li>
+                            <li><strong>Project Handle:</strong> Sinde, FKS Food, Shiseido, Diamond & Co, Beiersdorf, Skintific, Fumakilla NoMos, Greenfields, Otsuka Pocari, Kino, Garudafood.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="edu-card glass-panel reveal">
-                    <div class="edu-header">
-                        <h3>SMK Negeri 1 Rengel Tuban</h3>
-                        <span class="edu-date">Jul 2017 - May 2020</span>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Medical Record Staff</h4>
+                        <h5>PT. MH Thamrin (Radjak Hospital) | <span>Februari 2022 - Agustus 2023</span></h5>
+                        <ul>
+                            <li>Mengelola administrasi pembuatan dan registrasi rekam medis pasien baru.</li>
+                            <li>Melakukan input dan update data pasien ke dalam sistem secara akurat dan tepat waktu.</li>
+                            <li>Menyiapkan dokumen pendukung seperti faktur dan surat kontrol pasien.</li>
+                            <li>Melakukan pelaporan status pasien kepada dokter dan tim medis untuk kebutuhan tindak lanjut pemeriksaan.</li>
+                            <li>Merekap dan mengelola data status rawat pasien secara terstruktur.</li>
+                            <li>Memastikan kelengkapan dan kerapihan dokumen rekam medis sesuai standar operasional rumah sakit.</li>
+                        </ul>
                     </div>
-                    <p class="edu-degree">Teknik Sepeda Motor</p>
                 </div>
             </div>
         </section>
-        
+
+        <div class="two-column">
+            <!-- EDUCATION SECTION -->
+            <section class="glass-panel reveal">
+                <h3 class="section-title">Education <span class="neon-line"></span></h3>
+                <div class="timeline-item education">
+                    <h4>SMK Negri 1 Rengel Tuban</h4>
+                    <h5>Teknik Sepeda Motor | <span>Juli 2017 - Mei 2020</span></h5>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section class="glass-panel reveal">
+                <h3 class="section-title">Skills <span class="neon-line"></span></h3>
+                
+                <h4 class="skill-category">Hard Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Microsoft Excel / Word / PPT</span>
+                    <span class="skill-tag">Appsheets</span>
+                    <span class="skill-tag">Istrike</span>
+                    <span class="skill-tag">IDR System</span>
+                    <span class="skill-tag">App Script</span>
+                    <span class="skill-tag">JotForm</span>
+                    <span class="skill-tag">Staffinc Tools</span>
+                    <span class="skill-tag">Basic Python</span>
+                    <span class="skill-tag">Cloudinary</span>
+                    <span class="skill-tag">PowerShell</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">VBA</span>
+                    <span class="skill-tag">Vibe Coding</span>
+                    <span class="skill-tag">Github & CMD</span>
+                </div>
+
+                <h4 class="skill-category">Soft Skills</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                    Administrasi & pengelolaan data, Analisis data dasar & problem solving, Komunikasi tim & stakeholder, Cepat beradaptasi, Teliti.
+                </p>
+
+                <h4 class="skill-category">Bahasa</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Indonesia (Fasih)</span>
+                    <span class="skill-tag">Inggris (Pasif)</span>
+                </div>
+            </section>
+        </div>
+
         <footer>
-            <div class="footer-content reveal">
-                <div class="footer-logo">WNI.</div>
-                <p>&copy; 2026 Wahyu Nur Iman. All rights reserved.</p>
-            </div>
+            <p>&copy; 2026 Wahyu Nur Iman. Generated via AEGIS Cognitive Runtime.</p>
         </footer>
-    </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
