@@ -3,242 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wahyu Nur Iman | Data Analyst</title>
-    <meta name="description" content="Curriculum Vitae Wahyu Nur Iman - Data Analyst">
+    <title>Wahyu Nur Iman | Data Analyst & Developer</title>
+    <meta name="description" content="Curriculum Vitae Wahyu Nur Iman - Data Analyst and Developer">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
-
     <div class="noise-overlay"></div>
+    <div class="animated-bg"></div>
 
-    <div class="container">
-        <!-- HEADER SECTION -->
-        <header class="glass-panel reveal">
-            <div class="header-content">
-                <div class="profile-img-container">
-                    <!-- The user will drop their profile.jpg here -->
-                    <img src="profile.jpg" alt="Wahyu Nur Iman" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Wahyu+Nur+Iman&background=001524&color=00d4ff&size=150'">
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">W<span>NI</span>.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <div class="hero-text-container">
+                    <div class="greeting-badge">
+                        <span class="pulse-dot"></span> OPEN TO WORK
+                    </div>
+                    <h1 class="hero-title">Wahyu Nur<br><span class="gradient-text">Iman</span></h1>
+                    <h2 class="typewriter">Data Analyst & Automation Specialist</h2>
+                    <p class="hero-description">
+                        Transforming complex data into actionable insights and building intelligent automation tools to drive operational excellence.
+                    </p>
+                    <div class="contact-pill-container">
+                        <a href="mailto:wahyunuriman999@gmail.com" class="contact-pill"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="tel:0881011322462" class="contact-pill"><i class="fas fa-phone"></i> Phone</a>
+                        <a href="https://www.linkedin.com/in/wahyu-nur-iman-747756290/" target="_blank" class="contact-pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://bit.ly/PortofolioWahyuNurIman" target="_blank" class="contact-pill highlight-pill"><i class="fas fa-link"></i> Canva Portfolio</a>
+                    </div>
                 </div>
-                <div class="header-text">
-                    <h1 class="glitch-text" data-text="Wahyu Nur Iman">Wahyu Nur Iman</h1>
-                    <h2 class="typewriter">Data Analyst</h2>
-                    
-                    <div class="contact-info">
-                        <a href="mailto:wahyunuriman999@gmail.com"><i class="fas fa-envelope"></i> wahyunuriman999@gmail.com</a>
-                        <a href="tel:0881011322462"><i class="fas fa-phone"></i> 0881011322462</a>
-                        <a href="https://www.linkedin.com/in/wahyu-nur-iman-747756290/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://bit.ly/PortofolioWahyuNurIman" target="_blank"><i class="fas fa-link"></i> Portfolio</a>
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-glow"></div>
+                        <img src="profile.jpg" alt="Wahyu Nur Iman" class="profile-img">
+                        <div class="floating-badge badge-1">
+                            <i class="fas fa-chart-pie"></i> Data
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fas fa-bolt"></i> Automation
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
         <!-- ABOUT SECTION -->
-        <section class="glass-panel reveal">
-            <h3 class="section-title">About Me <span class="neon-line"></span></h3>
-            <p>
-                Data Analyst yang berorientasi pada hasil dengan pengalaman dalam pengelolaan manpower, administrasi payroll, serta reporting dan monitoring project. Berpengalaman dalam mengelola data secara sistematis, memastikan akurasi administrasi, serta mendukung operasional project secara end-to-end. Memiliki kemampuan analisis, koordinasi lintas tim, dan adaptif terhadap sistem kerja berbasis digital. Berkomitmen untuk memberikan kontribusi maksimal dalam meningkatkan efisiensi operasional dan kualitas administrasi perusahaan.
-            </p>
+        <section id="about" class="section reveal">
+            <div class="section-header">
+                <h3 class="section-title">About Me</h3>
+                <div class="title-line"></div>
+            </div>
+            <div class="glass-card about-card">
+                <p>
+                    Data Analyst yang berorientasi pada hasil dengan pengalaman mendalam dalam pengelolaan manpower, administrasi payroll, serta reporting dan monitoring project secara end-to-end. Memiliki keahlian khusus dalam menciptakan <strong>Tools Automation</strong> (Fuzzy Matching, Apps Script, VBA) dan mengintegrasikan <strong>AI Lokal (LLM)</strong> untuk mempercepat alur kerja secara eksponensial.
+                </p>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO / BENTO GRID SECTION -->
+        <section id="portfolio" class="section reveal">
+            <div class="section-header">
+                <h3 class="section-title">Featured Projects & Portfolio</h3>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Card 1 -->
+                <a href="https://bit.ly/PortofolioWahyuNurIman" target="_blank" class="bento-card large-card gradient-card">
+                    <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h4>UI/UX & Data Analyst Portfolio</h4>
+                    <p>Kumpulan mahakarya desain UI/UX, visualisasi data, dan analisis performa project yang dirangkum indah dalam format Canva interaktif.</p>
+                    <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- Card 2 -->
+                <div class="bento-card">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Automation Toolkit</h4>
+                    <p>Sistem otomatisasi alur kerja: Fuzzy Lookup Similarity, Google Apps Script, dan VBA Toolkit untuk menekan error rate operasional.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bento-card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h4>Local LLM Integration</h4>
+                    <p>Implementasi AI cerdas menggunakan Ollama dan API Key untuk pemrosesan data tingkat lanjut dan Vibe Coding mandiri.</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="bento-card">
+                    <div class="card-icon"><i class="fas fa-money-check"></i></div>
+                    <h4>WEB Cek Rekening</h4>
+                    <p>Web app khusus yang dibangun untuk memvalidasi nomor rekening payroll secara real-time demi keamanan finansial.</p>
+                </div>
+
+                <!-- Card 5 (GitHub Repos) -->
+                <div class="bento-card span-2">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h4>AEGIS-ELITE & Open Source AI</h4>
+                    <p>Kumpulan repositori GitHub Premium: <strong>AEGIS-ELITE</strong> (Framework AI Architecture), <strong>AEGIS-Core</strong> (Cognitive Runtime Layer), <strong>Ruhci-Claude-Engine</strong>, <strong>Designer-Mind-Skill</strong>, dan <strong>ProgrammerMager</strong>. Ekosistem AI agentic yang canggih.</p>
+                    <div class="repo-tags">
+                        <a href="https://github.com/wahyunuriman999/AEGIS-ELITE" target="_blank">AEGIS-ELITE</a>
+                        <a href="https://github.com/wahyunuriman999/AEGIS-Core" target="_blank">AEGIS-Core</a>
+                        <a href="https://github.com/wahyunuriman999/Ruhci-Claude-Engine" target="_blank">Ruhci</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- EXPERIENCE SECTION -->
-        <section class="glass-panel reveal">
-            <h3 class="section-title">Experience <span class="neon-line"></span></h3>
+        <section id="experience" class="section reveal">
+            <div class="section-header">
+                <h3 class="section-title">Professional Experience</h3>
+                <div class="title-line"></div>
+            </div>
             
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Data Analyst</h4>
-                        <h5>PT. Impact Power Mandiri (Staffinc Group) | <span>September 2023 - Juni 2026</span></h5>
-                        <ul>
-                            <li>Mengelola proses end-to-end manpower project, mulai dari hiring hingga deployment.</li>
-                            <li>Memimpin pelaksanaan product training dan training sistem (Appsheets, IDR & Istrike) untuk memastikan kesiapan operasional tim.</li>
-                            <li>Mengembangkan dan mengelola dashboard performa serta reporting (daily, weekly, monthly) sebagai dasar evaluasi dan pengambilan keputusan.</li>
-                            <li>Mengontrol administrasi payroll: rekap absensi, perhitungan gaji, pembuatan slip gaji, serta proses disbursement melalui Staffing Tools.</li>
-                            <li>Mengelola pengajuan Cash Advance (CA), reimbursement, dan request payment.</li>
-                            <li>Menyusun dan mengelola dokumen legal ketenagakerjaan (PKWT) serta administrasi BPJS Ketenagakerjaan & BPJS Kesehatan.</li>
-                            <li>Mengelola database manpower secara terstruktur untuk memastikan akurasi data dan kelengkapan administrasi.</li>
-                            <li>Melakukan koordinasi intensif dengan internal management, tim lapangan, dan klien.</li>
-                            <li>Melakukan monitoring performa dan operasional project secara berkala.</li>
-                            <li>Mengelola administrasi invoicing dan kelengkapan dokumen penagihan.</li>
-                            <li>Menyiapkan POSM dan produksi kebutuhan event & memonitor kelancaran event (Sebagai PIC event).</li>
-                            <li><strong>Tools Automation:</strong> Membuat tools pribadi (Fuzzy Lookup & Similarity Matching Nama, Google Apps Script Automation, WEB cek rekening, LLM local menggunakan Api key & ollama & VBA Toolkit).</li>
-                            <li><strong>Project Handle:</strong> Sinde, FKS Food, Shiseido, Diamond & Co, Beiersdorf, Skintific, Fumakilla NoMos, Greenfields, Otsuka Pocari, Kino, Garudafood.</li>
-                        </ul>
+            <div class="experience-container">
+                <div class="exp-card glass-card">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h4>Data Analyst</h4>
+                            <h5>PT. Impact Power Mandiri (Staffinc Group)</h5>
+                        </div>
+                        <div class="exp-date">Sep 2023 - Jun 2026</div>
                     </div>
+                    <ul class="exp-list">
+                        <li>Mengelola proses end-to-end manpower project (hiring hingga deployment).</li>
+                        <li>Memimpin product training & sistem (Appsheets, IDR & Istrike).</li>
+                        <li>Mengembangkan dashboard performa dan reporting (daily/weekly/monthly).</li>
+                        <li>Mengontrol administrasi payroll, rekap absensi, dan disbursement via Staffing Tools.</li>
+                        <li>Mengelola Cash Advance (CA), reimbursement, dan request payment.</li>
+                        <li>Membuat tools pribadi (Fuzzy Lookup, Apps Script, LLM local) untuk efisiensi ekstrim.</li>
+                        <li><strong>Project Handle:</strong> Sinde, FKS Food, Shiseido, Diamond & Co, Beiersdorf, Skintific, Fumakilla, dll.</li>
+                    </ul>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Medical Record Staff</h4>
-                        <h5>PT. MH Thamrin (Radjak Hospital) | <span>Februari 2022 - Agustus 2023</span></h5>
-                        <ul>
-                            <li>Mengelola administrasi pembuatan dan registrasi rekam medis pasien baru.</li>
-                            <li>Melakukan input dan update data pasien ke dalam sistem secara akurat dan tepat waktu.</li>
-                            <li>Menyiapkan dokumen pendukung seperti faktur dan surat kontrol pasien.</li>
-                            <li>Melakukan pelaporan status pasien kepada dokter dan tim medis untuk kebutuhan tindak lanjut pemeriksaan.</li>
-                            <li>Merekap dan mengelola data status rawat pasien secara terstruktur.</li>
-                            <li>Memastikan kelengkapan dan kerapihan dokumen rekam medis sesuai standar operasional rumah sakit.</li>
-                        </ul>
+                <div class="exp-card glass-card">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h4>Medical Record Staff</h4>
+                            <h5>PT. MH Thamrin (Radjak Hospital)</h5>
+                        </div>
+                        <div class="exp-date">Feb 2022 - Agu 2023</div>
                     </div>
+                    <ul class="exp-list">
+                        <li>Mengelola administrasi pembuatan dan registrasi rekam medis pasien baru secara akurat.</li>
+                        <li>Melakukan input dan update data pasien ke dalam sistem.</li>
+                        <li>Menyiapkan faktur, surat kontrol, dan dokumen pendukung lainnya.</li>
+                        <li>Melakukan pelaporan status pasien kepada dokter dan tim medis.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- PORTFOLIO SECTION -->
-        <section class="glass-panel reveal">
-            <h3 class="section-title">Portfolio & Projects <span class="neon-line"></span></h3>
-            
-            <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div class="glass-panel" style="padding: 1.5rem; background: rgba(0, 212, 255, 0.03); border: 1px solid rgba(0, 212, 255, 0.1);">
-                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;"><i class="fas fa-robot"></i> LLM Local & Vibe Coding</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Mengintegrasikan AI lokal menggunakan API Key & Ollama untuk otomatisasi respon dan pengolahan data.</p>
-                </div>
-                <div class="glass-panel" style="padding: 1.5rem; background: rgba(0, 212, 255, 0.03); border: 1px solid rgba(0, 212, 255, 0.1);">
-                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;"><i class="fas fa-search"></i> Fuzzy Matching Toolkit</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Tool cerdas (Fuzzy Lookup) untuk mendeteksi similarity nama secara otomatis, mengurangi error administratif.</p>
-                </div>
-                <div class="glass-panel" style="padding: 1.5rem; background: rgba(0, 212, 255, 0.03); border: 1px solid rgba(0, 212, 255, 0.1);">
-                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;"><i class="fas fa-bolt"></i> Google Apps Script Automation</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Sistem otomatisasi alur kerja berbasis cloud di ekosistem Google Workspace untuk pelaporan harian.</p>
-                </div>
-                <div class="glass-panel" style="padding: 1.5rem; background: rgba(0, 212, 255, 0.03); border: 1px solid rgba(0, 212, 255, 0.1);">
-                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;"><i class="fas fa-globe"></i> WEB Cek Rekening</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Pembuatan antarmuka web khusus untuk mengecek validitas nomor rekening secara real-time (kebutuhan payroll).</p>
-                </div>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section reveal">
+            <div class="section-header">
+                <h3 class="section-title">Technical Arsenal</h3>
+                <div class="title-line"></div>
+            </div>
+            <div class="skills-container">
+                <span class="skill-chip">Microsoft Office Suite</span>
+                <span class="skill-chip">Appsheets & Istrike</span>
+                <span class="skill-chip">IDR System</span>
+                <span class="skill-chip">Google Apps Script</span>
+                <span class="skill-chip">Staffinc Tools</span>
+                <span class="skill-chip">Python (Basic)</span>
+                <span class="skill-chip">HTML & CSS</span>
+                <span class="skill-chip">PowerShell & CMD</span>
+                <span class="skill-chip">VBA Toolkit</span>
+                <span class="skill-chip">Vibe Coding</span>
+                <span class="skill-chip">Local LLM & Ollama</span>
+                <span class="skill-chip">GitHub</span>
             </div>
         </section>
 
-        <!-- REPOS SECTION -->
-        <section class="glass-panel reveal">
-            <h3 class="section-title">Portofolio & Projects <span class="neon-line"></span></h3>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="https://bit.ly/PortofolioWahyuNurIman" target="_blank" style="color: var(--primary); text-decoration: none;">🎨 UI/UX & Data Analyst Portfolio (Canva)</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">Kumpulan hasil karya desain UI/UX, visualisasi data, dan analisis performa project yang dirangkum secara visual.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="#" style="color: var(--primary); text-decoration: none;">⚡ Tools Automation & Scripting</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">Pembuatan tools pribadi untuk efisiensi pekerjaan: Fuzzy Lookup & Similarity Matching Nama, Google Apps Script Automation, Web Cek Rekening, dan VBA Toolkit.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="#" style="color: var(--primary); text-decoration: none;">🤖 Local LLM AI Integration</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">Implementasi AI lokal menggunakan API Key dan sistem Ollama untuk pemrosesan data tingkat lanjut secara mandiri.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="https://github.com/wahyunuriman999/AEGIS-ELITE" target="_blank" style="color: var(--primary); text-decoration: none;">🛡️ AEGIS-ELITE</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">Framework/Plugin sistem arsitektur AI.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="https://github.com/wahyunuriman999/AEGIS-Core" target="_blank" style="color: var(--primary); text-decoration: none;">🧠 AEGIS-Core</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">Cognitive runtime layer for AI engineering. Adds planning, memory hierarchy, and deterministic execution on top of any language model.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="https://github.com/wahyunuriman999/Ruhci-Claude-Engine" target="_blank" style="color: var(--primary); text-decoration: none;">⚙️ Ruhci-Claude-Engine</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">Deterministic Context Intelligence Engine for AI Coding Agents.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="https://github.com/wahyunuriman999/Designer-Mind-Skill" target="_blank" style="color: var(--primary); text-decoration: none;">🎨 Designer-Mind-Skill</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">Skill kustom untuk UI/UX design intelligence.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="https://github.com/wahyunuriman999/Auto-Create-Report" target="_blank" style="color: var(--primary); text-decoration: none;">📊 Auto-Create-Report</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">Otomatisasi pembuatan laporan.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><a href="https://github.com/wahyunuriman999/ProgrammerMager" target="_blank" style="color: var(--primary); text-decoration: none;">👨‍💻 ProgrammerMager</a></h4>
-                        <p style="color: var(--text-secondary); margin-top: 5px; font-size: 0.9rem;">AI Agent dengan persona software engineer kelas dunia.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </main>
 
-        <div class="two-column">
-            <!-- EDUCATION SECTION -->
-            <section class="glass-panel reveal">
-                <h3 class="section-title">Education <span class="neon-line"></span></h3>
-                <div class="timeline-item education">
-                    <h4>SMK Negri 1 Rengel Tuban</h4>
-                    <h5>Teknik Sepeda Motor | <span>Juli 2017 - Mei 2020</span></h5>
-                </div>
-            </section>
-
-            <!-- SKILLS SECTION -->
-            <section class="glass-panel reveal">
-                <h3 class="section-title">Skills <span class="neon-line"></span></h3>
-                
-                <h4 class="skill-category">Hard Skills</h4>
-                <div class="skills-grid">
-                    <span class="skill-tag">Microsoft Excel / Word / PPT</span>
-                    <span class="skill-tag">Appsheets</span>
-                    <span class="skill-tag">Istrike</span>
-                    <span class="skill-tag">IDR System</span>
-                    <span class="skill-tag">App Script</span>
-                    <span class="skill-tag">JotForm</span>
-                    <span class="skill-tag">Staffinc Tools</span>
-                    <span class="skill-tag">Basic Python</span>
-                    <span class="skill-tag">Cloudinary</span>
-                    <span class="skill-tag">PowerShell</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">VBA</span>
-                    <span class="skill-tag">Vibe Coding</span>
-                    <span class="skill-tag">Github & CMD</span>
-                </div>
-
-                <h4 class="skill-category">Soft Skills</h4>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
-                    Administrasi & pengelolaan data, Analisis data dasar & problem solving, Komunikasi tim & stakeholder, Cepat beradaptasi, Teliti.
-                </p>
-
-                <h4 class="skill-category">Bahasa</h4>
-                <div class="skills-grid">
-                    <span class="skill-tag">Indonesia (Fasih)</span>
-                    <span class="skill-tag">Inggris (Pasif)</span>
-                </div>
-            </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">W<span>NI</span>.</div>
+            <p>&copy; 2026 Wahyu Nur Iman. Premium Interactive Portfolio.</p>
         </div>
-
-        <footer>
-            <p>&copy; 2026 Wahyu Nur Iman. Generated via AEGIS Cognitive Runtime.</p>
-        </footer>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
