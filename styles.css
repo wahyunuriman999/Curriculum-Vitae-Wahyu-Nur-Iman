@@ -317,6 +317,15 @@ a.portfolio-card:hover::before { opacity: 1; }
     
     @page { margin: 1cm 1.5cm; }
     
+    /* Reset Animations for Print */
+    .reveal, .reveal.active, [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+        transition: none !important;
+        animation: none !important;
+    }
+    
     body { 
         background: white !important; 
         color: black !important;
