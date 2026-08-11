@@ -342,16 +342,16 @@ a.portfolio-card:hover::before { opacity: 1; }
     
     /* Hero / Header */
     .hero-section { min-height: auto; padding: 0; margin-bottom: 15px; }
-    .hero-content { display: flex; flex-direction: row; align-items: center; border-bottom: 2px solid black; padding-bottom: 15px; margin-bottom: 10px; gap: 20px; }
-    .hero-text-container { flex: 1; text-align: left; order: 2 !important; }
+    .hero-content { display: flex; flex-direction: row; align-items: flex-start; border-bottom: 2px solid black; padding-bottom: 15px; margin-bottom: 10px; gap: 20px; }
+    .hero-text-container { flex: 1; text-align: left; order: 2 !important; padding-top: 4px; }
     .hero-title { font-size: 26pt; margin-bottom: 4px; font-weight: 800; color: black !important; text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; }
     .typewriter { font-size: 12pt; font-weight: 600; background: none; -webkit-text-fill-color: #444; color: #444; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
     .hero-description { font-size: 10pt; color: black !important; max-width: 100%; margin-bottom: 10px; line-height: 1.5; }
     
     /* Profile Image */
     .hero-visual { flex-shrink: 0; order: 1 !important; }
-    .profile-container { width: 90px; height: 90px; border-radius: 5px; overflow: hidden; }
-    .profile-img { border-radius: 5px !important; border: none !important; box-shadow: none !important; }
+    .profile-container { width: 110px; height: 140px; border-radius: 5px; overflow: hidden; }
+    .profile-img { border-radius: 5px !important; border: none !important; box-shadow: none !important; width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top center !important; }
     
     /* Contact Info Inline */
     .contact-pill-container { display: flex; flex-wrap: wrap; gap: 12px; flex-direction: row; align-items: center; margin-top: 5px; }
