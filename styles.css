@@ -340,15 +340,15 @@ a.portfolio-card:hover::before { opacity: 1; }
     .section { padding: 8px 0 !important; page-break-inside: auto; }
     
     /* Hero / Header */
-    .hero-section { min-height: auto; padding: 0; margin-bottom: 10px; }
+    .hero-section { min-height: auto; padding: 0; margin-bottom: 15px; }
     .hero-content { display: flex; flex-direction: row; justify-content: space-between; align-items: center; border-bottom: 2px solid black; padding-bottom: 15px; margin-bottom: 10px; gap: 20px; }
-    .hero-text-container { flex: 1; text-align: left; }
+    .hero-text-container { flex: 1; text-align: left; order: 1 !important; }
     .hero-title { font-size: 26pt; margin-bottom: 4px; font-weight: 800; color: black !important; text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; }
     .typewriter { font-size: 12pt; font-weight: 600; background: none; -webkit-text-fill-color: #444; color: #444; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .hero-description { font-size: 10pt; color: black !important; max-width: 100%; margin-bottom: 10px; }
+    .hero-description { font-size: 10pt; color: black !important; max-width: 100%; margin-bottom: 10px; line-height: 1.5; }
     
     /* Profile Image */
-    .hero-visual { flex-shrink: 0; }
+    .hero-visual { flex-shrink: 0; order: 2 !important; }
     .profile-container { width: 90px; height: 90px; border-radius: 5px; overflow: hidden; }
     .profile-img { border-radius: 5px !important; border: 1px solid #ccc !important; box-shadow: none !important; }
     
@@ -363,15 +363,16 @@ a.portfolio-card:hover::before { opacity: 1; }
     .title-line { display: none; }
     
     /* Experience */
-    .solid-card, .portfolio-card { padding: 0 !important; border: none !important; box-shadow: none !important; background: transparent !important; }
-    .exp-card { padding: 0 !important; border: none !important; background: transparent !important; box-shadow: none !important; margin-bottom: 16px; page-break-inside: auto; }
-    .exp-header { padding-bottom: 2px; margin-bottom: 8px; border-bottom: none; flex-direction: row !important; justify-content: space-between; align-items: baseline; }
+    .experience-container { display: block !important; }
+    .solid-card, .portfolio-card { padding: 0 !important; border: none !important; box-shadow: none !important; background: transparent !important; display: block !important; }
+    .exp-card { padding: 0 !important; border: none !important; background: transparent !important; box-shadow: none !important; margin-bottom: 20px !important; page-break-inside: auto !important; break-inside: auto !important; display: block !important; }
+    .exp-header { padding-bottom: 2px; margin-bottom: 8px; border-bottom: none; flex-direction: row !important; justify-content: space-between; align-items: baseline; display: flex !important; }
     .exp-title h4 { font-size: 12pt; font-weight: 700; color: black !important; margin-bottom: 2px; }
     .exp-title h5 { font-size: 10.5pt; font-weight: 600; color: #333 !important; font-style: italic; }
     .exp-date { font-size: 10pt; font-weight: 600; background: transparent !important; border: none !important; padding: 0 !important; color: black !important; }
     
-    .exp-list { padding-left: 18px; color: black !important; margin-top: 4px; }
-    .exp-list li { margin-bottom: 4px; font-size: 9.5pt; text-align: justify; }
+    .exp-list { padding-left: 18px; color: black !important; margin-top: 4px; display: block !important; }
+    .exp-list li { margin-bottom: 6px; font-size: 9.5pt; text-align: justify; page-break-inside: avoid; break-inside: avoid; }
     .exp-list li strong { display: block; color: black !important; font-size: 10pt; margin-top: 4px; font-weight: 700; }
     
     /* Skills */
