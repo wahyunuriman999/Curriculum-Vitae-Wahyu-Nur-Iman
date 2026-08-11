@@ -364,7 +364,7 @@ a.portfolio-card:hover::before { opacity: 1; }
     
     /* Experience */
     .solid-card, .portfolio-card { padding: 0 !important; border: none !important; box-shadow: none !important; background: transparent !important; }
-    .exp-card { padding: 0 !important; border: none !important; background: transparent !important; box-shadow: none !important; margin-bottom: 16px; page-break-inside: avoid; }
+    .exp-card { padding: 0 !important; border: none !important; background: transparent !important; box-shadow: none !important; margin-bottom: 16px; page-break-inside: auto; }
     .exp-header { padding-bottom: 2px; margin-bottom: 8px; border-bottom: none; flex-direction: row !important; justify-content: space-between; align-items: baseline; }
     .exp-title h4 { font-size: 12pt; font-weight: 700; color: black !important; margin-bottom: 2px; }
     .exp-title h5 { font-size: 10.5pt; font-weight: 600; color: #333 !important; font-style: italic; }
