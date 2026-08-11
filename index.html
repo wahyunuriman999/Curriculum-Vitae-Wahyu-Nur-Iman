@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -62,7 +63,7 @@
             </div>
             <div class="solid-card about-card reveal delay-100">
                 <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">
-                    <strong>Data Analyst</strong> dengan pengalaman lebih dari 4 tahun dalam administrasi operasional, pengelolaan data pelaporan, serta pembuatan <i>tool</i> otomatisasi. Terbiasa menangani manajemen tenaga kerja, administrasi <i>payroll</i>, dan <i>monitoring project end-to-end</i>.
+                    <strong>Data Analyst</strong> dengan pengalaman dalam administrasi operasional, pengelolaan data pelaporan, serta pembuatan <i>tool</i> otomatisasi. Terbiasa menangani manajemen tenaga kerja, administrasi <i>payroll</i>, dan <i>monitoring project end-to-end</i>.
                 </p>
                 <div class="focus-area">
                     <h4 style="color: var(--accent-1); margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Focus Area</h4>
@@ -320,37 +321,31 @@
                 }
             });
 
-            // Intersection Observer for Reveal Animations
-            const revealElements = document.querySelectorAll('.reveal');
-            
-            const revealOptions = {
-                threshold: 0.15,
-                rootMargin: "0px 0px -50px 0px"
-            };
+            // Setup AOS Animations based on existing classes
+            document.querySelectorAll('.reveal').forEach(el => {
+                let effect = 'fade-up';
+                
+                if (el.classList.contains('hero-text-container')) effect = 'fade-right';
+                if (el.classList.contains('hero-visual')) effect = 'fade-left';
+                if (el.classList.contains('about-card')) effect = 'zoom-in';
+                if (el.classList.contains('portfolio-card')) effect = 'zoom-in-up';
+                if (el.classList.contains('exp-card')) effect = 'fade-up';
+                if (el.classList.contains('solid-card') && !el.classList.contains('about-card')) effect = 'fade-up';
+                if (el.classList.contains('skills-container')) effect = 'fade-up';
+                if (el.classList.contains('section-header')) effect = 'fade-down';
 
-            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target); // Stop observing once revealed
-                    }
-                });
-            }, revealOptions);
-
-            revealElements.forEach(el => {
-                revealOnScroll.observe(el);
+                el.setAttribute('data-aos', effect);
+                
+                if(el.classList.contains('delay-100')) el.setAttribute('data-aos-delay', '100');
+                if(el.classList.contains('delay-200')) el.setAttribute('data-aos-delay', '200');
+                if(el.classList.contains('delay-300')) el.setAttribute('data-aos-delay', '300');
+                
+                // Remove the old reveal class so CSS doesn't hide it
+                el.classList.remove('reveal');
             });
             
-            // Trigger immediately for elements in viewport on load
+            // Handle hash jump on load
             setTimeout(() => {
-                revealElements.forEach(el => {
-                    const rect = el.getBoundingClientRect();
-                    if (rect.top < window.innerHeight) {
-                        el.classList.add('active');
-                    }
-                });
-                
-                // Handle hash jump on load
                 if (window.location.hash) {
                     const target = document.querySelector(window.location.hash);
                     if (target) {
@@ -363,7 +358,16 @@
             }, 100);
         });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Initialize Swiper for Documentation
