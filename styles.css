@@ -315,7 +315,7 @@ a.portfolio-card:hover::before { opacity: 1; }
 @media print {
     .no-print, .navbar, .swiper-button-next, .swiper-button-prev, .swiper-pagination { display: none !important; }
     
-    @page { margin: 1cm 1.5cm; }
+    @page { margin: 0; }
     
     /* Reset Animations for Print */
     .reveal, .reveal.active, [data-aos] {
@@ -334,6 +334,7 @@ a.portfolio-card:hover::before { opacity: 1; }
         line-height: 1.4;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+        padding: 1cm 1.5cm !important;
     }
     
     main { padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
