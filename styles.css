@@ -283,3 +283,17 @@ a.portfolio-card:hover::before { opacity: 1; }
 .swiper-pagination-bullet-active {
     background: var(--accent-1) !important;
 }
+
+/* Company Links */
+.company-link {
+    color: var(--accent-1);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dashed var(--accent-1);
+    transition: var(--transition);
+}
+.company-link:hover {
+    color: var(--accent-2);
+    border-bottom: 1px solid var(--accent-2);
+    background-color: rgba(30, 190, 165, 0.05);
+}
