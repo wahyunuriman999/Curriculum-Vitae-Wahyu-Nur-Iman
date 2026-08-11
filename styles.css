@@ -236,7 +236,7 @@ a.portfolio-card:hover::before { opacity: 1; }
 }
 .swiper-slide {
     position: relative;
-    background: #111; /* Latar gelap agar foto menonjol dan sisa ruang tidak mencolok */
+    background: var(--bg-card);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +245,9 @@ a.portfolio-card:hover::before { opacity: 1; }
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Memaksa seluruh bagian foto masuk tanpa dipotong */
+    object-fit: contain;
+    padding: 15px 15px 60px 15px; /* Ruang untuk shadow dan caption */
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.1));
     transition: var(--transition);
 }
 .swiper-slide:hover img {
