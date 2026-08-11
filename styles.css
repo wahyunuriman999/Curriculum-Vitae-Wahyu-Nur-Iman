@@ -286,14 +286,27 @@ a.portfolio-card:hover::before { opacity: 1; }
 
 /* Company Links */
 .company-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: var(--accent-1);
     text-decoration: none;
     font-weight: 500;
     border-bottom: 1px dashed var(--accent-1);
     transition: var(--transition);
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 .company-link:hover {
     color: var(--accent-2);
     border-bottom: 1px solid var(--accent-2);
     background-color: rgba(30, 190, 165, 0.05);
+}
+.inline-logo {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    object-fit: contain;
+    background: #fff;
+    padding: 1px;
 }
