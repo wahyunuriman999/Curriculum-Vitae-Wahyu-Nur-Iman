@@ -51,8 +51,9 @@ body {
     transition: var(--transition);
 }
 .nav-links a:hover { color: var(--accent-1); }
-.print-floating-btn { position: fixed; top: 16px; right: 20px; z-index: 9999; background: var(--text-main); color: var(--bg-main) !important; padding: 10px 18px; border-radius: 8px; font-weight: 600; display: flex; align-items: center; gap: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: var(--transition); font-size: 0.95rem; }
-.print-floating-btn:hover { background: var(--accent-1); color: white !important; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.2); }
+.print-nav-btn { background: var(--text-main); color: var(--bg-main) !important; padding: 6px 14px; border-radius: 6px; font-weight: 600; display: flex; align-items: center; gap: 6px; text-decoration: none; transition: var(--transition); font-size: 0.95rem; margin-left: 20px; }
+.print-nav-btn:hover { background: var(--accent-1); color: white !important; transform: translateY(-1px); }
+.print-only { display: none; }
 main { max-width: 1000px; margin: 0 auto; padding: 0 40px; }
 .section { padding: 120px 0 60px; }
 
@@ -315,6 +316,8 @@ a.portfolio-card:hover::before { opacity: 1; }
 /* Print Friendly */
 @media print {
     .no-print, .navbar, .swiper-button-next, .swiper-button-prev, .swiper-pagination { display: none !important; }
+    .web-only { display: none !important; }
+    .print-only { display: inline !important; }
     
     @page { margin: 0; }
     
