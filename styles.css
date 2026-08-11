@@ -337,7 +337,7 @@ a.portfolio-card:hover::before { opacity: 1; }
     }
     
     main { padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
-    .section { padding: 8px 0 !important; page-break-inside: avoid; }
+    .section { padding: 8px 0 !important; page-break-inside: auto; }
     
     /* Hero / Header */
     .hero-section { min-height: auto; padding: 0; margin-bottom: 10px; }
