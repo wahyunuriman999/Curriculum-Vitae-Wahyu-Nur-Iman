@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -17,8 +18,9 @@
             <div class="logo">Wahyu Nur Iman</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#documentation">Documentation</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
             </ul>
         </div>
     </nav>
@@ -58,6 +60,53 @@
                 <p>
                     Data Analyst yang berorientasi pada hasil dengan pengalaman mendalam dalam pengelolaan manpower, administrasi payroll, serta reporting dan monitoring project secara end-to-end. Berpengalaman dalam mengelola data secara sistematis, memastikan akurasi administrasi, serta mendukung operasional project. Memiliki kemampuan analisis, koordinasi lintas tim, dan adaptif terhadap sistem kerja berbasis digital. Memiliki keahlian khusus dalam menciptakan Tools Automation (Fuzzy Matching, Apps Script, VBA) dan mengintegrasikan AI Lokal (LLM) untuk efisiensi operasional perusahaan.
                 </p>
+            </div>
+        </section>
+
+        <!-- WORK DOCUMENTATION SECTION -->
+        <section id="documentation" class="section">
+            <div class="section-header reveal">
+                <h3 class="section-title">Work Documentation</h3>
+                <div class="title-line"></div>
+            </div>
+
+            <!-- Impact Power Mandiri -->
+            <div class="solid-card reveal delay-100" style="margin-bottom: 40px; padding: 30px;">
+                <h4 style="font-size: 1.4rem; color: var(--accent-1); margin-bottom: 5px;">PT. Impact Power Mandiri</h4>
+                <p style="color: var(--text-dim); margin-bottom: 20px;">Dashboard Analytics, Fulfillment, & Events</p>
+                
+                <div class="swiper impact-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="impact_1.jpg" alt="Visualisasi KPI"><div class="slide-caption">1. Visualisasi KPI</div></div>
+                        <div class="swiper-slide"><img src="impact_2.jpg" alt="Dashboard Attendance"><div class="slide-caption">2. Dashboard Attendance / Absensi</div></div>
+                        <div class="swiper-slide"><img src="impact_3.jpg" alt="Dashboard Fullfilment"><div class="slide-caption">3. Dashboard Fullfilment</div></div>
+                        <div class="swiper-slide"><img src="impact_4.jpg" alt="Dashboard Selling SPG"><div class="slide-caption">4. Dashboard Selling SPG</div></div>
+                        <div class="swiper-slide"><img src="impact_5.jpg" alt="Pocari Sweat Event"><div class="slide-caption">5. Form Registrasi Kolaborasi Pocari Sweat Event</div></div>
+                        <div class="swiper-slide"><img src="impact_6.jpg" alt="Training"><div class="slide-caption">6. Training System</div></div>
+                        <div class="swiper-slide"><img src="impact_7.jpg" alt="Monthly Meeting"><div class="slide-caption">7. Monthly Meeting</div></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!-- Radjak Hospital -->
+            <div class="solid-card reveal delay-200" style="padding: 30px;">
+                <h4 style="font-size: 1.4rem; color: var(--accent-1); margin-bottom: 5px;">PT. MH Thamrin (Radjak Hospital)</h4>
+                <p style="color: var(--text-dim); margin-bottom: 20px;">Administrasi & Rekam Medis</p>
+                
+                <div class="swiper thamrin-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="thamrin_1.jpg" alt="Penyiapan Rekam Medis"><div class="slide-caption">1. Penyiapan Rekam Medis dari Sistem Pendaftaran</div></div>
+                        <div class="swiper-slide"><img src="thamrin_2.jpg" alt="Cek Status"><div class="slide-caption">2. Cek Status Rekam Medis</div></div>
+                        <div class="swiper-slide"><img src="thamrin_3.jpg" alt="Pemberkasan"><div class="slide-caption">3. Pemberkasan Rekam Medis (Disortir & Dirapikan)</div></div>
+                        <div class="swiper-slide"><img src="thamrin_4.jpg" alt="Scan"><div class="slide-caption">4. Scan Rekam Medis</div></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
 
@@ -315,6 +364,24 @@
                     }
                 }
             }, 100);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Swiper for Documentation
+            const impactSwiper = new Swiper('.impact-swiper', {
+                loop: true,
+                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                autoplay: { delay: 4000, disableOnInteraction: false }
+            });
+            const thamrinSwiper = new Swiper('.thamrin-swiper', {
+                loop: true,
+                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                autoplay: { delay: 4500, disableOnInteraction: false }
+            });
         });
     </script>
 </body>
