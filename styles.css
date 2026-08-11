@@ -53,7 +53,7 @@ body {
 .nav-links a:hover { color: var(--accent-1); }
 
 main { max-width: 1000px; margin: 0 auto; padding: 0 40px; }
-.section { padding: 100px 0 40px; }
+.section { padding: 120px 0 60px; }
 
 /* Section Headers */
 .section-header { margin-bottom: 40px; display: flex; align-items: center; gap: 20px; }
