@@ -109,6 +109,7 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 40px; }
 .profile-img {
     width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
     border: 1px solid var(--border-light);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     filter: none;
     transition: var(--transition);
 }
@@ -162,10 +163,9 @@ a.portfolio-card:hover .card-action { opacity: 1; transform: translateX(5px); }
 
 .exp-list { padding-left: 20px; color: var(--text-dim); font-size: 1rem; }
 .exp-list li { margin-bottom: 15px; }
-.exp-list li strong { color: var(--text-main); font-weight: 500; }
+.exp-list li strong { display: block; color: var(--accent-1); font-weight: 600; font-size: 1.05rem; margin-bottom: 4px; font-family: var(--font-display); }
 
-/* Two Column Layout */
-.two-column-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 80px; }
+
 
 /* Skills Chips */
 .skills-container { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -283,11 +283,19 @@ footer { padding: 60px 0; margin-top: 60px; border-top: 1px solid var(--border-l
     .hero-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
     .hero-visual { order: -1; }
     .contact-pill-container { justify-content: center; }
-    .two-column-section { grid-template-columns: 1fr; gap: 0px; }
     .exp-header { flex-direction: column; gap: 16px; }
 }
 @media (max-width: 600px) {
     .hero-title { font-size: 2.5rem; }
     .portfolio-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
+}
+
+/* Print Friendly */
+@media print {
+    .navbar, .contact-pill, .swiper-button-next, .swiper-button-prev, .swiper-pagination { display: none !important; }
+    body { background: white; color: black; }
+    .solid-card, .portfolio-card { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+    .section { padding: 20px 0; }
+    .hero-section { min-height: auto; padding-top: 0; }
 }
