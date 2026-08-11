@@ -351,7 +351,7 @@ a.portfolio-card:hover::before { opacity: 1; }
     /* Profile Image */
     .hero-visual { flex-shrink: 0; order: 2 !important; }
     .profile-container { width: 90px; height: 90px; border-radius: 5px; overflow: hidden; }
-    .profile-img { border-radius: 5px !important; border: 1px solid #ccc !important; box-shadow: none !important; }
+    .profile-img { border-radius: 5px !important; border: none !important; box-shadow: none !important; }
     
     /* Contact Info Inline */
     .contact-pill-container { display: flex; flex-wrap: wrap; gap: 12px; flex-direction: row; align-items: center; margin-top: 5px; }
