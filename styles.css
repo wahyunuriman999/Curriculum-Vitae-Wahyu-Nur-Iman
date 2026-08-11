@@ -229,14 +229,14 @@ a.portfolio-card:hover::before { opacity: 1; }
 /* Swiper Carousel */
 .swiper {
     width: 100%;
-    height: 400px;
+    height: 450px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 .swiper-slide {
     position: relative;
-    background: #111;
+    background: var(--bg-main);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,8 +245,8 @@ a.portfolio-card:hover::before { opacity: 1; }
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    opacity: 0.9;
+    object-fit: cover;
+    opacity: 0.95;
     transition: var(--transition);
 }
 .swiper-slide:hover img {
