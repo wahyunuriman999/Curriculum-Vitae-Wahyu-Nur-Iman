@@ -18,236 +18,287 @@
         <div class="nav-content">
             <div class="logo">Wahyu Nur Iman</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#documentation">Doc</a></li>
+                <li><a href="#documentation">Documentation</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#github">GitHub</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <div class="scrollytelling-wrapper">
-            
-            <!-- LEFT COLUMN: Sticky Visuals -->
-            <div class="sticky-visual">
-                <div class="sticky-image-container">
-                    <!-- Images for each section -->
-                    <img src="profile_white.jpg" id="visual-home" class="active">
-                    <img src="impact_1.jpg" id="visual-about" class="bg-white-mode">
-                    <img src="impact_2.jpg" id="visual-documentation" class="bg-white-mode">
-                    <img src="impact_4.jpg" id="visual-experience" class="bg-white-mode">
-                    <img src="profile_white.jpg" id="visual-github" style="filter: grayscale(100%);">
-                    <img src="thamrin_4.jpg" id="visual-skills" class="bg-white-mode">
+        <!-- HERO SECTION -->
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <div class="hero-text-container reveal">
+                    <h1 class="hero-title">Wahyu Nur Iman</h1>
+                    <h2 class="typewriter">Data Analyst | Data & Process Automation</h2>
+                    <p class="hero-description">
+                        Berpengalaman dalam manajemen data operasional, pelaporan (reporting), dan pembuatan tool otomatisasi untuk merampingkan proses kerja harian.
+                    </p>
+                    <div class="cta-group reveal delay-100" style="margin-top: 25px; margin-bottom: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="#experience" class="contact-pill highlight-pill" style="padding: 12px 25px; font-weight: bold;"><i class="fas fa-briefcase"></i> Lihat Pengalaman</a>
+                        <a href="#github" class="contact-pill" style="padding: 12px 25px; font-weight: bold;"><i class="fab fa-github"></i> Kunjungi GitHub</a>
+                    </div>
+                    <div class="contact-pill-container reveal delay-200">
+                        <a href="mailto:wahyunuriman999@gmail.com" target="_blank" class="contact-pill"><i class="fas fa-envelope"></i> wahyunuriman999@gmail.com</a>
+                        <a href="https://wa.me/62881011322462" target="_blank" class="contact-pill"><i class="fab fa-whatsapp"></i> 0881011322462</a>
+                        <a href="https://www.linkedin.com/in/wahyu-nur-iman-747756290/" target="_blank" class="contact-pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://bit.ly/PortofolioWahyuNurIman" target="_blank" class="contact-pill"><i class="fas fa-link"></i> Portfolio Canva</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal delay-200">
+                    <div class="profile-container">
+                        <img src="profile_white.jpg" alt="Wahyu Nur Iman" class="profile-img">
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- RIGHT COLUMN: Scrolling Text (Steps) -->
-            <div class="scroll-content">
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="section-header reveal">
+                <h3 class="section-title">About Me</h3>
+                <div class="title-line"></div>
+            </div>
+            <div class="solid-card about-card reveal delay-100">
+                <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">
+                    <strong>Data Analyst</strong> dengan pengalaman dalam administrasi operasional, pengelolaan data pelaporan, serta pembuatan <i>tool</i> otomatisasi. Terbiasa menangani manajemen tenaga kerja, administrasi <i>payroll</i>, dan <i>monitoring project end-to-end</i>.
+                </p>
+                <div class="focus-area">
+                    <h4 style="color: var(--accent-1); margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Focus Area</h4>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <span class="skill-chip" style="background: rgba(30,190,165,0.1); border-color: transparent;">Data Processing</span>
+                        <span class="skill-chip" style="background: rgba(30,190,165,0.1); border-color: transparent;">Reporting & Dashboard</span>
+                        <span class="skill-chip" style="background: rgba(30,190,165,0.1); border-color: transparent;">Process Automation</span>
+                        <span class="skill-chip" style="background: rgba(30,190,165,0.1); border-color: transparent;">Manpower Administration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK DOCUMENTATION SECTION -->
+        <section id="documentation" class="section">
+            <div class="section-header reveal">
+                <h3 class="section-title">Work Documentation</h3>
+                <div class="title-line"></div>
+            </div>
+
+            <!-- Impact Power Mandiri -->
+            <div class="solid-card reveal delay-100" style="margin-bottom: 40px; padding: 30px;">
+                <h4 style="font-size: 1.4rem; color: var(--accent-1); margin-bottom: 5px;">PT. Impact Power Mandiri</h4>
+                <p style="color: var(--text-dim); margin-bottom: 20px;">Dashboard Analytics, Fulfillment, & Events</p>
                 
-                <!-- HERO SECTION -->
-                <div id="home" class="step-section" data-target="visual-home">
-                    <div class="reveal">
-                        <h1 class="hero-title">Wahyu Nur Iman</h1>
-                        <h2 class="typewriter">Data Analyst | Data & Process Automation</h2>
-                        <p class="hero-description">
-                            Berpengalaman dalam manajemen data operasional, pelaporan (reporting), dan pembuatan tool otomatisasi untuk merampingkan proses kerja harian.
-                        </p>
-                        <div class="cta-group" style="margin-bottom: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
-                            <a href="#experience" class="contact-pill highlight-pill"><i class="fas fa-briefcase"></i> Lihat Pengalaman</a>
-                            <a href="#github" class="contact-pill"><i class="fab fa-github"></i> Kunjungi GitHub</a>
-                        </div>
-                        <div class="contact-pill-container">
-                            <a href="mailto:wahyunuriman999@gmail.com" target="_blank" class="contact-pill"><i class="fas fa-envelope"></i> Email</a>
-                            <a href="https://wa.me/62881011322462" target="_blank" class="contact-pill"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                            <a href="https://www.linkedin.com/in/wahyu-nur-iman-747756290/" target="_blank" class="contact-pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        </div>
+                <div class="swiper impact-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="impact_1.jpg" alt="Visualisasi KPI"><div class="slide-caption">Visualisasi KPI</div></div>
+                        <div class="swiper-slide"><img src="impact_2.jpg" alt="Dashboard Attendance"><div class="slide-caption">Dashboard Attendance / Absensi</div></div>
+                        <div class="swiper-slide"><img src="impact_3.jpg" alt="Dashboard Fullfilment"><div class="slide-caption">Dashboard Fullfilment</div></div>
+                        <div class="swiper-slide"><img src="impact_4.jpg" alt="Dashboard Selling SPG"><div class="slide-caption">Dashboard Selling SPG</div></div>
+                        <div class="swiper-slide"><img src="impact_5.jpg" alt="Pocari Sweat Event"><div class="slide-caption">Form Registrasi Kolaborasi Pocari Sweat Event</div></div>
+                        <div class="swiper-slide"><img src="impact_6.jpg" alt="Training"><div class="slide-caption">Training System</div></div>
+                        <div class="swiper-slide"><img src="impact_7.jpg" alt="Monthly Meeting"><div class="slide-caption">Monthly Meeting</div></div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-
-                <!-- ABOUT SECTION -->
-                <div id="about" class="step-section" data-target="visual-about">
-                    <div class="section-header reveal">
-                        <h3 class="section-title">About Me</h3>
-                    </div>
-                    <div class="solid-card reveal">
-                        <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">
-                            <strong>Data Analyst</strong> dengan pengalaman dalam administrasi operasional, pengelolaan data pelaporan, serta pembuatan <i>tool</i> otomatisasi. Terbiasa menangani manajemen tenaga kerja, administrasi <i>payroll</i>, dan <i>monitoring project end-to-end</i>.
-                        </p>
-                        <div class="focus-area">
-                            <h4 style="color: var(--accent-1); margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Focus Area</h4>
-                            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <span class="skill-chip">Data Processing</span>
-                                <span class="skill-chip">Reporting & Dashboard</span>
-                                <span class="skill-chip">Process Automation</span>
-                                <span class="skill-chip">Manpower Admin</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WORK DOCUMENTATION SECTION -->
-                <div id="documentation" class="step-section" data-target="visual-documentation">
-                    <div class="section-header reveal">
-                        <h3 class="section-title">Documentation</h3>
-                    </div>
-
-                    <div class="solid-card reveal" style="margin-bottom: 40px;">
-                        <h4 style="font-size: 1.4rem; color: var(--accent-1); margin-bottom: 5px;">PT. Impact Power Mandiri</h4>
-                        <p style="color: var(--text-dim); margin-bottom: 20px;">Dashboard Analytics, Fulfillment, & Events</p>
-                        
-                        <div class="swiper impact-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="impact_1.jpg" alt="Visualisasi KPI"><div class="slide-caption">Visualisasi KPI</div></div>
-                                <div class="swiper-slide"><img src="impact_2.jpg" alt="Dashboard Attendance"><div class="slide-caption">Dashboard Attendance</div></div>
-                                <div class="swiper-slide"><img src="impact_3.jpg" alt="Dashboard Fullfilment"><div class="slide-caption">Dashboard Fullfilment</div></div>
-                                <div class="swiper-slide"><img src="impact_4.jpg" alt="Dashboard Selling SPG"><div class="slide-caption">Dashboard Selling SPG</div></div>
-                                <div class="swiper-slide"><img src="impact_5.jpg" alt="Pocari Sweat Event"><div class="slide-caption">Kolaborasi Pocari Sweat Event</div></div>
-                                <div class="swiper-slide"><img src="impact_6.jpg" alt="Training"><div class="slide-caption">Training System</div></div>
-                                <div class="swiper-slide"><img src="impact_7.jpg" alt="Monthly Meeting"><div class="slide-caption">Monthly Meeting</div></div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-
-                    <div class="solid-card reveal">
-                        <h4 style="font-size: 1.4rem; color: var(--accent-1); margin-bottom: 5px;">Radjak Hospital</h4>
-                        <p style="color: var(--text-dim); margin-bottom: 20px;">Administrasi & Rekam Medis</p>
-                        
-                        <div class="swiper thamrin-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="thamrin_1.jpg" alt="Penyiapan Rekam Medis"><div class="slide-caption">Penyiapan Rekam Medis</div></div>
-                                <div class="swiper-slide"><img src="thamrin_2.jpg" alt="Cek Status"><div class="slide-caption">Cek Status Rekam Medis</div></div>
-                                <div class="swiper-slide"><img src="thamrin_3.jpg" alt="Pemberkasan"><div class="slide-caption">Pemberkasan Rekam Medis</div></div>
-                                <div class="swiper-slide"><img src="thamrin_4.jpg" alt="Scan"><div class="slide-caption">Scan Rekam Medis</div></div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- EXPERIENCE SECTION -->
-                <div id="experience" class="step-section" data-target="visual-experience">
-                    <div class="section-header reveal">
-                        <h3 class="section-title">Experience</h3>
-                    </div>
-                    
-                    <div class="exp-card solid-card reveal">
-                        <div class="exp-header">
-                            <div class="exp-title">
-                                <h4>Data Analyst</h4>
-                                <h5>PT. Impact Power Mandiri</h5>
-                            </div>
-                            <div class="exp-date">Sep 2023 - Jun 2026</div>
-                        </div>
-                        <ul class="exp-list">
-                            <li><strong>Data Management & Reporting:</strong> Mengembangkan dan memelihara dashboard performa project serta menyusun laporan rutin (daily, weekly, monthly).</li>
-                            <li><strong>Process Automation:</strong> Membuat berbagai tool internal berbasis Google Apps Script, VBA, dan Fuzzy Lookup untuk otomasi similarity matching.</li>
-                            <li><strong>Operational Excellence:</strong> Mengelola siklus operasional manpower (hiring hingga deployment) sebagai PIC project klien besar.</li>
-                            <li><strong>Payroll & Administration:</strong> Mengontrol proses administrasi payroll, rekap absensi, perhitungan gaji, dan pencairan dana.</li>
-                        </ul>
-                    </div>
-
-                    <div class="exp-card solid-card reveal">
-                        <div class="exp-header">
-                            <div class="exp-title">
-                                <h4>Medical Record Staff</h4>
-                                <h5>PT. MH Thamrin (Radjak Hospital)</h5>
-                            </div>
-                            <div class="exp-date">Feb 2022 - Agu 2023</div>
-                        </div>
-                        <ul class="exp-list">
-                            <li><strong>Medical Record Management:</strong> Mengelola administrasi dan registrasi rekam medis pasien secara sistematis.</li>
-                            <li><strong>Data Entry & System Update:</strong> Input pembaruan data pasien ke dalam Sistem Informasi Manajemen RS.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GITHUB SECTION -->
-                <div id="github" class="step-section" data-target="visual-github">
-                    <div class="section-header reveal">
-                        <h3 class="section-title">GitHub & Open Source</h3>
-                    </div>
-
-                    <div class="portfolio-grid">
-                        <a href="https://github.com/wahyunuriman999/AEGIS-ELITE" target="_blank" class="portfolio-card reveal">
-                            <div class="card-icon"><i class="fab fa-github"></i></div>
-                            <h4>AEGIS-ELITE</h4>
-                            <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 10px;">Python &bull; AI Architecture</div>
-                            <p>Framework/Plugin sistem arsitektur AI yang canggih.</p>
-                            <div class="card-action">View Repo <i class="fas fa-arrow-right"></i></div>
-                        </a>
-                        <a href="https://github.com/wahyunuriman999/Ruhci-Claude-Engine" target="_blank" class="portfolio-card reveal">
-                            <div class="card-icon"><i class="fab fa-github"></i></div>
-                            <h4>Ruhci Engine</h4>
-                            <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 10px;">Python &bull; Automation</div>
-                            <p>Deterministic Context Engine for AI Coding Agents.</p>
-                            <div class="card-action">View Repo <i class="fas fa-arrow-right"></i></div>
-                        </a>
-                        <a href="https://github.com/wahyunuriman999/ProgrammerMager" target="_blank" class="portfolio-card reveal">
-                            <div class="card-icon"><i class="fab fa-github"></i></div>
-                            <h4>ProgrammerMager</h4>
-                            <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 10px;">AI Agent &bull; Efficiency</div>
-                            <p>AI Agent dengan persona software engineer anti-ribet.</p>
-                            <div class="card-action">View Repo <i class="fas fa-arrow-right"></i></div>
-                        </a>
-                        <a href="https://github.com/wahyunuriman999/Auto-Create-Report" target="_blank" class="portfolio-card reveal">
-                            <div class="card-icon"><i class="fab fa-github"></i></div>
-                            <h4>Auto-Create-Report</h4>
-                            <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 10px;">Python &bull; Analytics</div>
-                            <p>Sistem otomasi pembuatan laporan data analytics.</p>
-                            <div class="card-action">View Repo <i class="fas fa-arrow-right"></i></div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- EDUCATION & SKILLS SECTION -->
-                <div id="skills" class="step-section" data-target="visual-skills">
-                    
-                    <div class="section-header reveal">
-                        <h3 class="section-title">Education</h3>
-                    </div>
-                    <div class="solid-card reveal" style="margin-bottom: 50px;">
-                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 5px;">SMK Negri 1 Rengel Tuban</h4>
-                        <p style="color: var(--text-dim); margin-bottom: 15px;">Juli 2017 - Mei 2020</p>
-                        <p><strong>Jurusan:</strong> Teknik Sepeda Motor</p>
-                    </div>
-
-                    <div class="section-header reveal">
-                        <h3 class="section-title">Skills</h3>
-                    </div>
-                    
-                    <h4 class="reveal" style="margin-bottom: 10px; font-size: 1.1rem; color: var(--accent-1);">Data & Reporting</h4>
-                    <div class="skills-container reveal" style="margin-bottom: 20px;">
-                        <span class="skill-chip">Microsoft Excel</span>
-                        <span class="skill-chip">Google Sheets</span>
-                        <span class="skill-chip">Data Processing</span>
-                        <span class="skill-chip">Dashboarding</span>
-                    </div>
-
-                    <h4 class="reveal" style="margin-bottom: 10px; font-size: 1.1rem; color: var(--accent-1);">Process Automation</h4>
-                    <div class="skills-container reveal" style="margin-bottom: 20px;">
-                        <span class="skill-chip">Google Apps Script</span>
-                        <span class="skill-chip">VBA Toolkit</span>
-                        <span class="skill-chip">Python</span>
-                        <span class="skill-chip">Appsheets</span>
-                    </div>
-
-                    <h4 class="reveal" style="margin-bottom: 10px; font-size: 1.1rem; color: var(--accent-1);">Tools & Soft Skills</h4>
-                    <div class="skills-container reveal" style="margin-bottom: 25px;">
-                        <span class="skill-chip">LLM / Vibe Coding</span>
-                        <span class="skill-chip">Github</span>
-                        <span class="skill-chip">Problem Solving</span>
-                        <span class="skill-chip">Detail & Teliti</span>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- Radjak Hospital -->
+            <div class="solid-card reveal delay-200" style="padding: 30px;">
+                <h4 style="font-size: 1.4rem; color: var(--accent-1); margin-bottom: 5px;">PT. MH Thamrin (Radjak Hospital)</h4>
+                <p style="color: var(--text-dim); margin-bottom: 20px;">Administrasi & Rekam Medis</p>
+                
+                <div class="swiper thamrin-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="thamrin_1.jpg" alt="Penyiapan Rekam Medis"><div class="slide-caption">Penyiapan Rekam Medis dari Sistem Pendaftaran</div></div>
+                        <div class="swiper-slide"><img src="thamrin_2.jpg" alt="Cek Status"><div class="slide-caption">Cek Status Rekam Medis</div></div>
+                        <div class="swiper-slide"><img src="thamrin_3.jpg" alt="Pemberkasan"><div class="slide-caption">Pemberkasan Rekam Medis (Disortir & Dirapikan)</div></div>
+                        <div class="swiper-slide"><img src="thamrin_4.jpg" alt="Scan"><div class="slide-caption">Scan Rekam Medis</div></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <div class="section-header reveal">
+                <h3 class="section-title">Professional Experience</h3>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="experience-container">
+                <div class="exp-card solid-card reveal">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h4>Data Analyst</h4>
+                            <h5>PT. Impact Power Mandiri (Staffinc Group)</h5>
+                        </div>
+                        <div class="exp-date">Sep 2023 - Jun 2026</div>
+                    </div>
+                    <ul class="exp-list">
+                        <li><strong>Data Management & Reporting:</strong> Mengembangkan dan memelihara dashboard performa project serta menyusun laporan rutin (daily, weekly, monthly) untuk memonitor pencapaian target dan mendukung pengambilan keputusan.</li>
+                        <li><strong>Process Automation:</strong> Membuat berbagai tool internal berbasis Google Apps Script, VBA, dan Fuzzy Lookup untuk mengotomatisasi pencocokan data (similarity matching) dan validasi nomor rekening, secara signifikan mengurangi waktu kerja manual.</li>
+                        <li><strong>Operational Excellence:</strong> Mengelola siklus penuh operasional manpower (hiring hingga deployment) dan bertindak sebagai PIC untuk berbagai project klien besar, memastikan operasional berjalan sesuai SLA.</li>
+                        <li><strong>Payroll & Administration:</strong> Mengontrol proses administrasi payroll, rekap absensi, perhitungan gaji, dan pencairan dana (disbursement) melalui sistem HR, serta mengelola dokumen legal (PKWT) dan BPJS secara akurat.</li>
+                        <li><strong>Financial Operations:</strong> Mengelola pengajuan Cash Advance (CA), reimbursement, request payment, dan administrasi invoicing dengan tingkat ketelitian tinggi untuk mendukung kelancaran finansial project.</li>
+                        <li><strong>Training & Implementation:</strong> Memimpin sesi product & system training (Appsheets, IDR & Istrike) untuk memastikan kesiapan dan pemahaman tim lapangan terhadap standar operasional klien.</li>
+                        <li><strong>Project Handle:</strong> 
+                            <a href="https://www.sindebudi.com/" target="_blank" class="company-link">Sinde</a>, 
+                            <a href="https://fksfood.com/" target="_blank" class="company-link">FKS Food</a>, 
+                            <a href="https://corp.shiseido.com/en/" target="_blank" class="company-link">Shiseido</a>, 
+                            <a href="https://www.diamondnco.id/" target="_blank" class="company-link">Diamond & Co</a>, 
+                            <a href="https://www.beiersdorf.co.id/" target="_blank" class="company-link">Beiersdorf</a>, 
+                            <a href="https://id.skintific.com/id/pages/skintific" target="_blank" class="company-link">Skintific</a>, 
+                            <a href="https://www.fumakilla.co.id/" target="_blank" class="company-link">Fumakilla NoMos</a>, 
+                            <a href="https://greenfieldsdairy.com/" target="_blank" class="company-link">Greenfields</a>, 
+                            <a href="https://pocarisweat.id/" target="_blank" class="company-link">Otsuka Pocari</a>, 
+                            <a href="https://www.kino.co.id/" target="_blank" class="company-link">Kino</a>, 
+                            <a href="https://www.garudafood.com/" target="_blank" class="company-link">Garudafood</a>.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="exp-card solid-card reveal delay-100">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h4>Medical Record Staff</h4>
+                            <h5>PT. MH Thamrin (Radjak Hospital)</h5>
+                        </div>
+                        <div class="exp-date">Feb 2022 - Agu 2023</div>
+                    </div>
+                    <ul class="exp-list">
+                        <li><strong>Medical Record Management:</strong> Mengelola administrasi dan registrasi rekam medis pasien secara sistematis, memastikan kelengkapan dan kerapihan dokumen sesuai standar operasional (SOP) rumah sakit.</li>
+                        <li><strong>Data Entry & System Update:</strong> Melakukan input dan pembaruan data pasien ke dalam Sistem Informasi Manajemen Rumah Sakit secara akurat dan tepat waktu untuk mendukung kelancaran pelayanan medis.</li>
+                        <li><strong>Document Preparation:</strong> Menyiapkan dokumen pendukung operasional seperti faktur layanan dan surat kontrol pasien secara rutin.</li>
+                        <li><strong>Cross-functional Coordination:</strong> Melakukan pelaporan status pasien secara proaktif kepada dokter dan tim medis guna mempercepat proses tindak lanjut pemeriksaan.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- GITHUB SECTION -->
+        <section id="github" class="section">
+            <div class="section-header reveal">
+                <h3 class="section-title">GitHub & Open Source</h3>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- AEGIS-ELITE -->
+                <a href="https://github.com/wahyunuriman999/AEGIS-ELITE" target="_blank" class="portfolio-card reveal">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h4>AEGIS-ELITE</h4>
+                    <p>Framework/Plugin sistem arsitektur AI yang canggih.</p>
+                    <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 15px; margin-top: -5px; opacity: 0.9;">Python &bull; AI Architecture</div>
+                    <div class="card-action">View Repository <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- AEGIS-Core -->
+                <a href="https://github.com/wahyunuriman999/AEGIS-Core" target="_blank" class="portfolio-card reveal delay-100">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h4>AEGIS-Core</h4>
+                    <p>Cognitive runtime layer for AI engineering. Adds planning, memory hierarchy, and deterministic execution.</p>
+                    <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 15px; margin-top: -5px; opacity: 0.9;">Python &bull; Engineering</div>
+                    <div class="card-action">View Repository <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- Ruhci-Claude-Engine -->
+                <a href="https://github.com/wahyunuriman999/Ruhci-Claude-Engine" target="_blank" class="portfolio-card reveal delay-200">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h4>Ruhci-Claude-Engine</h4>
+                    <p>Deterministic Context Intelligence Engine for AI Coding Agents.</p>
+                    <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 15px; margin-top: -5px; opacity: 0.9;">Python &bull; Automation</div>
+                    <div class="card-action">View Repository <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- Designer-Mind-Skill -->
+                <a href="https://github.com/wahyunuriman999/Designer-Mind-Skill" target="_blank" class="portfolio-card reveal">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h4>Designer-Mind-Skill</h4>
+                    <p>Skill kustom untuk UI/UX design intelligence yang profesional.</p>
+                    <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 15px; margin-top: -5px; opacity: 0.9;">Design &bull; UI/UX</div>
+                    <div class="card-action">View Repository <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- Auto-Create-Report -->
+                <a href="https://github.com/wahyunuriman999/Auto-Create-Report" target="_blank" class="portfolio-card reveal delay-100">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h4>Auto-Create-Report</h4>
+                    <p>Sistem otomatisasi pembuatan laporan data analytics.</p>
+                    <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 15px; margin-top: -5px; opacity: 0.9;">Python &bull; Data Analytics</div>
+                    <div class="card-action">View Repository <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- ProgrammerMager -->
+                <a href="https://github.com/wahyunuriman999/ProgrammerMager" target="_blank" class="portfolio-card reveal delay-200">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h4>ProgrammerMager</h4>
+                    <p>AI Agent dengan persona software engineer efisien dan anti-ribet.</p>
+                    <div style="font-size: 0.8rem; color: var(--accent-1); margin-bottom: 15px; margin-top: -5px; opacity: 0.9;">AI Agent &bull; Efficiency</div>
+                    <div class="card-action">View Repository <i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- EDUCATION & SKILLS -->
+        <div class="two-column-section">
+            <section class="section">
+                <div class="section-header reveal">
+                    <h3 class="section-title">Education</h3>
+                    <div class="title-line"></div>
+                </div>
+                <div class="solid-card reveal delay-100">
+                    <h4 style="font-size: 1.2rem; margin-bottom: 5px;">SMK Negri 1 Rengel Tuban</h4>
+                    <p style="color: var(--text-dim); margin-bottom: 15px;">Juli 2017 - Mei 2020</p>
+                    <p><strong>Jurusan:</strong> Teknik Sepeda Motor</p>
+                </div>
+            </section>
+
+            <section class="section" id="skills">
+                <div class="section-header reveal">
+                    <h3 class="section-title">Skills</h3>
+                    <div class="title-line"></div>
+                </div>
+                
+                <h4 class="reveal" style="margin-bottom: 10px; font-size: 1.1rem; color: var(--accent-1);">Data & Reporting</h4>
+                <div class="skills-container reveal delay-100" style="margin-bottom: 20px;">
+                    <span class="skill-chip">Microsoft Excel</span>
+                    <span class="skill-chip">Google Sheets</span>
+                    <span class="skill-chip">Data Processing</span>
+                    <span class="skill-chip">Dashboarding</span>
+                    <span class="skill-chip">Staffinc Tools</span>
+                </div>
+
+                <h4 class="reveal delay-100" style="margin-bottom: 10px; font-size: 1.1rem; color: var(--accent-1);">Process Automation</h4>
+                <div class="skills-container reveal delay-200" style="margin-bottom: 20px;">
+                    <span class="skill-chip">Google Apps Script</span>
+                    <span class="skill-chip">VBA Toolkit</span>
+                    <span class="skill-chip">Basic Python</span>
+                    <span class="skill-chip">PowerShell / CMD</span>
+                    <span class="skill-chip">Appsheets / Istrike / IDR</span>
+                </div>
+
+                <h4 class="reveal delay-200" style="margin-bottom: 10px; font-size: 1.1rem; color: var(--accent-1);">Additional & Tools</h4>
+                <div class="skills-container reveal delay-300" style="margin-bottom: 25px;">
+                    <span class="skill-chip">LLM / Vibe Coding</span>
+                    <span class="skill-chip">HTML / CSS</span>
+                    <span class="skill-chip">Github</span>
+                    <span class="skill-chip">JotForm</span>
+                    <span class="skill-chip">Cloudinary</span>
+                </div>
+
+                <h4 class="reveal delay-100" style="margin-bottom: 10px; font-size: 1.1rem;">Soft Skills</h4>
+                <p class="reveal delay-200" style="color: var(--text-dim); margin-bottom: 25px; line-height: 1.8;">
+                    Administrasi & pengelolaan data sistematis, Analisis data & problem solving, Komunikasi lintas tim & stakeholder, Adaptif dengan sistem baru, Detail dan teliti.
+                </p>
+            </section>
         </div>
+
     </main>
 
     <footer>
@@ -258,9 +309,6 @@
     </footer>
 
     <!-- Interactive Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Navbar Scroll Effect
@@ -273,47 +321,57 @@
                 }
             });
 
-            // Scrollytelling Intersection Observer
-            const observerOptions = {
-                root: null,
-                rootMargin: '-40% 0px -40% 0px', // Trigger when section is around the middle of viewport
-                threshold: 0
-            };
+            // Setup AOS Animations based on existing classes
+            document.querySelectorAll('.reveal').forEach(el => {
+                let effect = 'fade-up';
+                
+                if (el.classList.contains('hero-text-container')) effect = 'fade-right';
+                if (el.classList.contains('hero-visual')) effect = 'fade-left';
+                if (el.classList.contains('about-card')) effect = 'zoom-in';
+                if (el.classList.contains('portfolio-card')) effect = 'zoom-in-up';
+                if (el.classList.contains('exp-card')) effect = 'fade-up';
+                if (el.classList.contains('solid-card') && !el.classList.contains('about-card')) effect = 'fade-up';
+                if (el.classList.contains('skills-container')) effect = 'fade-up';
+                if (el.classList.contains('section-header')) effect = 'fade-down';
+
+                el.setAttribute('data-aos', effect);
+                
+                if(el.classList.contains('delay-100')) el.setAttribute('data-aos-delay', '100');
+                if(el.classList.contains('delay-200')) el.setAttribute('data-aos-delay', '200');
+                if(el.classList.contains('delay-300')) el.setAttribute('data-aos-delay', '300');
+                
+                // Remove the old reveal class so CSS doesn't hide it
+                el.classList.remove('reveal');
+            });
             
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Find which visual should be active
-                        const targetId = entry.target.getAttribute('data-target');
-                        if (targetId) {
-                            // Remove active class from all images
-                            document.querySelectorAll('.sticky-image-container img').forEach(img => {
-                                img.classList.remove('active');
-                            });
-                            // Add active class to target image
-                            const targetImage = document.getElementById(targetId);
-                            if (targetImage) {
-                                targetImage.classList.add('active');
-                            }
-                        }
-                        
-                        // Update active state in Navbar
-                        const sectionId = entry.target.getAttribute('id');
-                        document.querySelectorAll('.nav-links a').forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href') === '#' + sectionId) {
-                                link.classList.add('active');
-                            }
+            // Initialize AOS after dynamically adding data-aos attributes
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 1000,
+                    easing: 'ease-out-cubic',
+                    once: true,
+                    offset: 200,
+                });
+            }
+            
+            // Handle hash jump on load
+            setTimeout(() => {
+                if (window.location.hash) {
+                    const target = document.querySelector(window.location.hash);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80, // Offset for navbar
+                            behavior: 'smooth'
                         });
                     }
-                });
-            }, observerOptions);
-
-            // Observe all step sections
-            document.querySelectorAll('.step-section').forEach(section => {
-                observer.observe(section);
-            });
-
+                }
+            }, 100);
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
             // Initialize Swiper for Documentation
             const impactSwiper = new Swiper('.impact-swiper', {
                 loop: true,
@@ -327,21 +385,6 @@
                 pagination: { el: '.swiper-pagination', clickable: true },
                 autoplay: { delay: 4500, disableOnInteraction: false }
             });
-
-            // Initialize AOS Animations
-            document.querySelectorAll('.reveal').forEach(el => {
-                el.setAttribute('data-aos', 'fade-up');
-                el.classList.remove('reveal');
-            });
-            
-            if (typeof AOS !== 'undefined') {
-                AOS.init({
-                    duration: 1000,
-                    easing: 'ease-out-cubic',
-                    once: true,
-                    offset: 100, // Reduced offset for smoother reveal in scrolling container
-                });
-            }
         });
     </script>
 </body>
