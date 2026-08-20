@@ -148,6 +148,10 @@ a.portfolio-card:hover .card-action {
 .exp-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; border-bottom: 1px solid var(--border-light); padding-bottom: 24px; }
 .exp-title h4 { font-size: 1.4rem; color: var(--accent-1); font-weight: 700; }
 .exp-title h5 { color: var(--text-main); font-weight: 600; margin-top: 4px; font-size: 1.1rem; }
+.inline-logo { height: 14px; width: auto; vertical-align: middle; margin-right: 2px; }
+.svg-logo { height: 12px !important; padding: 0 !important; }
+.company-link { color: var(--text-main); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--border-hover); transition: var(--transition); display: inline-flex; align-items: center; gap: 2px; }
+.company-link:hover { color: var(--accent-1); border-color: var(--accent-1); }
 .exp-date { background: var(--bg-main); border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 6px; font-size: 0.9rem; color: var(--text-dim); font-weight: 500; }
 
 .exp-list { padding-left: 20px; color: var(--text-dim); font-size: 1rem; }
