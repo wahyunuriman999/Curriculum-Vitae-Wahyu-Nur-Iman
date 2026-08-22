@@ -148,10 +148,10 @@ a.portfolio-card:hover .card-action {
 .exp-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; border-bottom: 1px solid var(--border-light); padding-bottom: 24px; }
 .exp-title h4 { font-size: 1.4rem; color: var(--accent-1); font-weight: 700; }
 .exp-title h5 { color: var(--text-main); font-weight: 600; margin-top: 4px; font-size: 1.1rem; }
-.inline-logo { height: 14px; width: auto; vertical-align: middle; margin-right: 2px; }
-.svg-logo { height: 12px !important; padding: 0 !important; }
-.company-link { color: var(--text-main); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--border-hover); transition: var(--transition); display: inline-flex; align-items: center; gap: 2px; }
-.company-link:hover { color: var(--accent-1); border-color: var(--accent-1); }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.company-tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid var(--border-light); border-radius: 6px; background: var(--bg-card); font-size: 0.85rem; font-weight: 600; color: var(--text-main); text-decoration: none; transition: var(--transition); }
+.company-tag:hover { border-color: var(--accent-1); color: var(--accent-1); }
+.company-tag img { height: 14px; width: auto; max-width: 60px; object-fit: contain; }
 .exp-date { background: var(--bg-main); border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 6px; font-size: 0.9rem; color: var(--text-dim); font-weight: 500; }
 
 .exp-list { padding-left: 20px; color: var(--text-dim); font-size: 1rem; }
@@ -385,6 +385,9 @@ a.portfolio-card:hover::before { opacity: 1; }
     .exp-list li strong { display: block; color: black !important; font-size: 10pt; margin-top: 4px; font-weight: 700; }
     
     /* Skills */
+    .project-tags { gap: 6px; margin-top: 4px; }
+    .company-tag { border: 1px solid #ddd !important; background: transparent !important; padding: 2px 6px !important; font-size: 9pt !important; color: black !important; }
+    .company-tag img { height: 12px !important; }
     .two-column-section { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 15px; }
     .skills-container { gap: 6px; margin-top: 4px; }
     .skill-chip { padding: 2px 6px; font-size: 9.5pt; border: 1px solid #777 !important; background: transparent !important; color: black !important; border-radius: 3px; font-weight: 500; }
