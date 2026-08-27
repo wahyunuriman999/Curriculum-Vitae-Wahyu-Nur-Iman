@@ -164,10 +164,12 @@ a.portfolio-card:hover .card-action {
 /* Skills Chips */
 .skills-container { display: flex; flex-wrap: wrap; gap: 10px; }
 .skill-chip { 
+    display: inline-flex; align-items: center; gap: 8px;
     padding: 8px 16px; background: var(--bg-main); border: 1px solid var(--border-light); 
     border-radius: 6px; font-weight: 500; font-size: 0.95rem; color: var(--text-dim);
     cursor: pointer; transition: var(--transition);
 }
+.skill-icon { height: 16px; width: auto; object-fit: contain; }
 .skill-chip:hover {
     border-color: var(--accent-1); color: var(--accent-1); transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
