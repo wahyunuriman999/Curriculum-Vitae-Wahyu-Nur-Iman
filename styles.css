@@ -169,7 +169,8 @@ a.portfolio-card:hover .card-action {
     border-radius: 6px; font-weight: 500; font-size: 0.95rem; color: var(--text-dim);
     cursor: pointer; transition: var(--transition);
 }
-.skill-icon { height: 16px; width: auto; object-fit: contain; }
+img.skill-icon { height: 16px; width: auto; object-fit: contain; }
+i.skill-icon { font-size: 16px; display: inline-block; text-align: center; width: 16px; }
 .skill-chip:hover {
     border-color: var(--accent-1); color: var(--accent-1); transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
