@@ -387,8 +387,9 @@ a.portfolio-card:hover::before { opacity: 1; }
     
     /* Experience */
     .experience-container { display: block !important; }
-    .solid-card, .portfolio-card { padding: 0 !important; border: none !important; box-shadow: none !important; background: transparent !important; display: block !important; page-break-inside: avoid !important; break-inside: avoid !important; margin-bottom: 20px !important; }
-    .exp-card { padding: 0 !important; border: none !important; background: transparent !important; box-shadow: none !important; margin-bottom: 20px !important; page-break-inside: avoid !important; break-inside: avoid !important; display: block !important; }
+    .solid-card, .portfolio-card { padding: 0 !important; border: none !important; box-shadow: none !important; background: transparent !important; display: block !important; }
+    .exp-card { padding: 0 !important; border: none !important; background: transparent !important; box-shadow: none !important; margin-bottom: 20px !important; page-break-inside: auto !important; break-inside: auto !important; display: block !important; }
+    #education .solid-card { page-break-inside: avoid !important; break-inside: avoid !important; margin-bottom: 20px !important; }
     .exp-header { padding-bottom: 2px; margin-bottom: 8px; border-bottom: none; flex-direction: row !important; justify-content: space-between; align-items: baseline; display: flex !important; }
     .exp-title h4 { font-size: 12pt; font-weight: 700; color: #10b981 !important; margin-bottom: 2px; }
     .exp-title h5 { font-size: 10.5pt; font-weight: 600; color: #333 !important; font-style: italic; }
