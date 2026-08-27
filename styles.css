@@ -173,6 +173,12 @@ a.portfolio-card:hover .card-action {
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
 }
 
+/* Modern Modal (SweetAlert2 Customization) */
+.modern-modal { border-radius: 20px !important; border: 1px solid var(--border-light) !important; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15) !important; padding: 1.5rem !important; }
+.modern-modal-title { font-family: var(--font-display) !important; font-size: 1.4rem !important; margin-bottom: 0 !important; color: var(--text-main) !important; padding-top: 0 !important; }
+.modern-modal-close { transition: var(--transition) !important; }
+.modern-modal-close:hover { color: var(--accent-1) !important; transform: rotate(90deg); }
+
 /* Footer */
 footer { padding: 40px 0; margin-top: 40px; border-top: 1px solid var(--border-light); }
 .footer-content { max-width: 1000px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; color: var(--text-dim); font-size: 0.9rem; }

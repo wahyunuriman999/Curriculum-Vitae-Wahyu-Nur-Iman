@@ -437,13 +437,18 @@
                     const skillDesc = skillDescriptions[skillName];
                     if (skillDesc) {
                         Swal.fire({
-                            title: skillName,
-                            text: skillDesc,
-                            icon: 'info',
-                            confirmButtonText: 'Tutup',
-                            confirmButtonColor: '#10b981',
+                            title: `<div style="display:flex; align-items:center; gap:12px; justify-content:center;"><i class="fas fa-check-circle" style="color: var(--accent-1); font-size: 1.5rem;"></i> <span>${skillName}</span></div>`,
+                            html: `<div style="text-align: center; font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-top: 15px;">${skillDesc}</div>`,
+                            showCloseButton: true,
+                            showConfirmButton: false,
+                            width: 500,
+                            padding: '1.5em',
+                            background: 'var(--bg-main)',
+                            backdrop: `rgba(15, 23, 42, 0.4) backdrop-filter: blur(4px)`,
                             customClass: {
-                                title: 'font-display'
+                                popup: 'modern-modal',
+                                title: 'modern-modal-title',
+                                closeButton: 'modern-modal-close'
                             }
                         });
                     }
