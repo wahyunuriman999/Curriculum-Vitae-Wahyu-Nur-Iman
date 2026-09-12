@@ -411,3 +411,42 @@ a.portfolio-card:hover::before { opacity: 1; }
     footer { display: none; }
     a { text-decoration: none !important; color: black !important; }
 }
+
+/* Profile Tooltip */
+.profile-tooltip {
+    position: absolute;
+    top: -10px;
+    right: -30px;
+    background: var(--accent-1);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    z-index: 10;
+    animation: floatTooltip 2s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.profile-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--accent-1);
+}
+@keyframes floatTooltip {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+.profile-tooltip.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+

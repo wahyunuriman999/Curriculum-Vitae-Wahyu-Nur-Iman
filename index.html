@@ -61,7 +61,8 @@
                     </div>
                 </div>
                 <div class="hero-visual reveal delay-200">
-                    <div class="profile-container">
+                    <div class="profile-container" id="profile-picture" style="position: relative; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <div class="profile-tooltip" id="profile-tooltip">Klik untuk profil lengkap! <i class="fas fa-hand-pointer"></i></div>
                         <img src="profile_new.png" alt="Wahyu Nur Iman" class="profile-img">
                     </div>
                 </div>
@@ -558,6 +559,85 @@
                     }
                 });
             });
+        });
+        
+        // Profile Picture Interaction
+        document.addEventListener('DOMContentLoaded', () => {
+            const tooltip = document.getElementById('profile-tooltip');
+            const profilePic = document.getElementById('profile-picture');
+            
+            // Hide tooltip after 5 seconds
+            setTimeout(() => {
+                if (tooltip) {
+                    tooltip.classList.add('hidden');
+                }
+            }, 5000);
+
+            // Handle Profile Click
+            if (profilePic) {
+                profilePic.addEventListener('click', () => {
+                    // Hide tooltip immediately when clicked
+                    if (tooltip) tooltip.classList.add('hidden');
+                    
+                    Swal.fire({
+                        title: 'Profil Lengkap',
+                        html: `
+                            <div style="text-align: left; font-size: 1rem; line-height: 1.8; color: var(--text-dim); margin-top: 10px;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <tr style="border-bottom: 1px solid var(--border-light);">
+                                        <td style="padding: 10px 0; font-weight: 600; width: 40%;"><i class="fas fa-user" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> Nama</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">Wahyu Nur Iman</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--border-light);">
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-calendar-alt" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> TTL</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">Tuban, 1 Agustus 2001</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--border-light);">
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-map-marker-alt" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> Domisili</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">Pondok Cabe</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--border-light);">
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-id-card" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> Identitas</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">KTP & Paspor</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--border-light);">
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-flag" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> Warga Negara</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">Indonesia</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--border-light);">
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-ruler-vertical" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> Postur</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">165 cm / 70 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px 0; font-weight: 600; vertical-align: top;"><i class="fas fa-language" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> Bahasa</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">
+                                            <ul style="margin: 0; padding-left: 20px;">
+                                                <li>Indonesia (Native)</li>
+                                                <li>Inggris (Fasih Pasif)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        `,
+                        imageUrl: 'profile_new.png',
+                        imageWidth: 120,
+                        imageHeight: 120,
+                        imageAlt: 'Wahyu Nur Iman',
+                        showCloseButton: true,
+                        showConfirmButton: false,
+                        width: 450,
+                        padding: '1.5em',
+                        background: 'var(--bg-main)',
+                        backdrop: `rgba(15, 23, 42, 0.5) backdrop-filter: blur(4px)`,
+                        customClass: {
+                            popup: 'modern-modal',
+                            title: 'modern-modal-title',
+                            closeButton: 'modern-modal-close'
+                        }
+                    });
+                });
+            }
         });
     </script>
 </body>
