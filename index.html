@@ -89,6 +89,99 @@
                 </div>
             </div>
         </section>
+        
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="section no-print" style="padding-top: 40px; padding-bottom: 40px;">
+            <div class="section-header reveal">
+                <h3 class="section-title">Certifications & Test Results</h3>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="solid-card reveal delay-100" style="padding: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; margin-bottom: 25px;">
+                    <div>
+                        <h4 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 8px;"><i class="fas fa-certificate" style="margin-right: 8px; color: #fbbf24;"></i>World Wide IQ Test</h4>
+                        <div style="display: inline-flex; align-items: center; background: rgba(16, 185, 129, 0.1); color: var(--accent-1); padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 1rem; border: 1px solid rgba(16, 185, 129, 0.2);">
+                            Skor Keseluruhan: 113 (Di Atas Rata-Rata)
+                        </div>
+                    </div>
+                    <a href="https://d15kagmkped7z4.cloudfront.net/production/id.wwiqtest.com/customers/3809864/1789079732688_3806894_quiz_result_report.pdf" target="_blank" class="contact-pill"><i class="fas fa-file-pdf" style="color: #ef4444;"></i> View Official Report</a>
+                </div>
+
+                <!-- CSS Grid Layout for PDF Images -->
+                <style>
+                    .iq-grid {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                    }
+                    @media (min-width: 768px) {
+                        .iq-grid { grid-template-columns: 1.2fr 1fr; }
+                    }
+                    .iq-sub-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 15px;
+                    }
+                    .iq-img-card {
+                        border: 1px solid var(--border-light);
+                        border-radius: 8px;
+                        overflow: hidden;
+                        background: #fff;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+                        transition: transform 0.2s ease;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .iq-img-card:hover {
+                        transform: translateY(-3px);
+                        box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+                    }
+                    .iq-img-card img {
+                        width: 100%;
+                        flex-grow: 1;
+                        object-fit: cover;
+                        display: block;
+                        border-bottom: 1px solid var(--border-light);
+                    }
+                    .iq-img-label {
+                        padding: 10px;
+                        text-align: center;
+                        font-size: 0.85rem;
+                        font-weight: 600;
+                        color: var(--text-dim);
+                    }
+                </style>
+
+                <div class="iq-grid">
+                    <!-- Main Certificate -->
+                    <div class="iq-img-card">
+                        <img loading="lazy" src="iq_test_page_1.jpg" alt="Sertifikat IQ">
+                        <div class="iq-img-label">Sertifikat World Wide IQ Test</div>
+                    </div>
+                    
+                    <!-- Sub Scores Grid -->
+                    <div class="iq-sub-grid">
+                        <div class="iq-img-card">
+                            <img loading="lazy" src="iq_test_page_6.jpg" alt="Wawasan Visuospasial">
+                            <div class="iq-img-label">Wawasan (101)</div>
+                        </div>
+                        <div class="iq-img-card">
+                            <img loading="lazy" src="iq_test_page_8.jpg" alt="Penalaran Pola Visuospasial">
+                            <div class="iq-img-label">Pola Visuospasial (127)</div>
+                        </div>
+                        <div class="iq-img-card">
+                            <img loading="lazy" src="iq_test_page_10.jpg" alt="Penalaran Pola Numerik">
+                            <div class="iq-img-label">Pola Numerik (111)</div>
+                        </div>
+                        <div class="iq-img-card">
+                            <img loading="lazy" src="iq_test_page_11.jpg" alt="Rangkuman Skor">
+                            <div class="iq-img-label">Rangkuman Skor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- EXPERIENCE SECTION -->
         <section id="experience" class="section">
@@ -311,33 +404,7 @@
             </div>
         </section>
 
-        <!-- CERTIFICATIONS SECTION -->
-        <section id="certifications" class="section no-print">
-            <div class="section-header reveal">
-                <h3 class="section-title">Certifications & Test Results</h3>
-                <div class="title-line"></div>
-            </div>
 
-            <div class="solid-card reveal delay-100" style="margin-bottom: 40px; padding: 40px;">
-                <h4 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 5px;"><i class="fas fa-certificate" style="margin-right: 8px;"></i>World Wide IQ Test</h4>
-                <p style="color: var(--accent-1); font-weight: 500; margin-bottom: 10px;">Skor: 113 (Di Atas Rata-Rata)</p>
-                <p style="margin-bottom: 30px;"><a href="https://d15kagmkped7z4.cloudfront.net/production/id.wwiqtest.com/customers/3809864/1789079732688_3806894_quiz_result_report.pdf" target="_blank" style="color: var(--accent-1); text-decoration: underline;"><i class="fas fa-link"></i> Sumber/Referensi Hasil Tes (PDF)</a></p>
-                
-                <div class="swiper iq-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_1.jpg" alt="Sertifikat IQ"><div class="slide-caption">Sertifikat IQ Test</div></div>
-                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_4.jpg" alt="Skor Keseluruhan"><div class="slide-caption">Skor Keseluruhan (113)</div></div>
-                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_6.jpg" alt="Wawasan Visuospasial"><div class="slide-caption">Wawasan Visuospasial (101)</div></div>
-                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_8.jpg" alt="Penalaran Pola Visuospasial"><div class="slide-caption">Penalaran Pola Visuospasial (127)</div></div>
-                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_10.jpg" alt="Penalaran Pola Numerik"><div class="slide-caption">Penalaran Pola Numerik (111)</div></div>
-                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_11.jpg" alt="Rangkuman Skor"><div class="slide-caption">Rangkuman Skor</div></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </section>
 
         <!-- EDUCATION SECTION -->
         <section id="education" class="section">
@@ -441,12 +508,6 @@
                 autoplay: { delay: 4000, disableOnInteraction: false }
             });
             const thamrinSwiper = new Swiper('.thamrin-swiper', {
-                loop: true,
-                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-                pagination: { el: '.swiper-pagination', clickable: true },
-                autoplay: { delay: 4500, disableOnInteraction: false }
-            });
-            const iqSwiper = new Swiper('.iq-swiper', {
                 loop: true,
                 navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
                 pagination: { el: '.swiper-pagination', clickable: true },
