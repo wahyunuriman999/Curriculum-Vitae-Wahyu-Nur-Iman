@@ -32,6 +32,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#documentation">Documentation</a></li>
                 <li><a href="#github">GitHub</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#education">Education</a></li>
             </ul>
             <a href="javascript:window.print()" class="print-nav-btn no-print"><i class="fas fa-print"></i> Cetak PDF</a>
@@ -61,7 +62,7 @@
                 </div>
                 <div class="hero-visual reveal delay-200">
                     <div class="profile-container">
-                        <img src="profile_white.jpg" alt="Wahyu Nur Iman" class="profile-img">
+                        <img src="profile_new.png" alt="Wahyu Nur Iman" class="profile-img">
                     </div>
                 </div>
             </div>
@@ -310,6 +311,34 @@
             </div>
         </section>
 
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="section no-print">
+            <div class="section-header reveal">
+                <h3 class="section-title">Certifications & Test Results</h3>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="solid-card reveal delay-100" style="margin-bottom: 40px; padding: 40px;">
+                <h4 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 5px;"><i class="fas fa-certificate" style="margin-right: 8px;"></i>World Wide IQ Test</h4>
+                <p style="color: var(--accent-1); font-weight: 500; margin-bottom: 10px;">Skor: 113 (Di Atas Rata-Rata)</p>
+                <p style="margin-bottom: 30px;"><a href="https://d15kagmkped7z4.cloudfront.net/production/id.wwiqtest.com/customers/3809864/1789079732688_3806894_quiz_result_report.pdf" target="_blank" style="color: var(--accent-1); text-decoration: underline;"><i class="fas fa-link"></i> Sumber/Referensi Hasil Tes (PDF)</a></p>
+                
+                <div class="swiper iq-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_1.jpg" alt="Sertifikat IQ"><div class="slide-caption">Sertifikat IQ Test</div></div>
+                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_4.jpg" alt="Skor Keseluruhan"><div class="slide-caption">Skor Keseluruhan (113)</div></div>
+                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_6.jpg" alt="Wawasan Visuospasial"><div class="slide-caption">Wawasan Visuospasial (101)</div></div>
+                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_8.jpg" alt="Penalaran Pola Visuospasial"><div class="slide-caption">Penalaran Pola Visuospasial (127)</div></div>
+                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_10.jpg" alt="Penalaran Pola Numerik"><div class="slide-caption">Penalaran Pola Numerik (111)</div></div>
+                        <div class="swiper-slide"><img loading="lazy" src="iq_test_page_11.jpg" alt="Rangkuman Skor"><div class="slide-caption">Rangkuman Skor</div></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
         <!-- EDUCATION SECTION -->
         <section id="education" class="section">
             <div class="section-header reveal">
@@ -412,6 +441,12 @@
                 autoplay: { delay: 4000, disableOnInteraction: false }
             });
             const thamrinSwiper = new Swiper('.thamrin-swiper', {
+                loop: true,
+                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                autoplay: { delay: 4500, disableOnInteraction: false }
+            });
+            const iqSwiper = new Swiper('.iq-swiper', {
                 loop: true,
                 navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
                 pagination: { el: '.swiper-pagination', clickable: true },
