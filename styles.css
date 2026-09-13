@@ -44,7 +44,7 @@ body {
     max-width: 1000px; margin: 0 auto; padding: 0 40px;
     display: flex; justify-content: space-between; align-items: center;
 }
-.logo { font-weight: 700; font-size: 1.25rem; color: var(--text-main); letter-spacing: -0.5px; }
+.logo { font-weight: 700; font-size: 1.25rem; color: var(--text-main); letter-spacing: -0.5px; white-space: nowrap; }
 .nav-links { display: flex; gap: 30px; list-style: none; }
 .nav-links a { 
     color: var(--text-dim); text-decoration: none; font-size: 0.95rem; font-weight: 500;
