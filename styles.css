@@ -41,12 +41,13 @@ body {
     border-bottom: 1px solid var(--border-light);
 }
 .nav-content {
-    max-width: 1000px; margin: 0 auto; padding: 0 40px;
+    max-width: 1000px; margin: 0 auto; padding: 0 0 0 40px;
     display: flex; justify-content: space-between; align-items: center;
     overflow-x: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+.nav-content::after { content: ''; width: 40px; display: block; flex-shrink: 0; }
 .nav-content::-webkit-scrollbar { display: none; }
 .logo { font-weight: 700; font-size: 1.25rem; color: var(--text-main); letter-spacing: -0.5px; white-space: nowrap; margin-right: 30px; flex-shrink: 0; }
 .nav-links { display: flex; gap: 30px; list-style: none; flex-shrink: 0; }
