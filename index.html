@@ -449,7 +449,7 @@
 
             <div class="pagination-controls reveal" style="display: flex; justify-content: center; align-items: center; margin-top: 30px; gap: 15px;">
                 <button id="prev-repo-btn" class="nav-btn" disabled><i class="fas fa-chevron-left"></i> Prev</button>
-                <div id="repo-page-indicator" style="font-weight: 600; color: var(--text-main); font-size: 0.95rem;">1 of 2</div>
+                <div id="repo-page-indicator" style="font-weight: 600; color: var(--text-main); font-size: 0.95rem;">1 of 4</div>
                 <button id="next-repo-btn" class="nav-btn">Next <i class="fas fa-chevron-right"></i></button>
             </div>
 
@@ -692,7 +692,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const repos = document.querySelectorAll('.repo-item');
-    const itemsPerPage = 6;
+    const itemsPerPage = 3;
     let currentPage = 1;
     const totalPages = Math.ceil(repos.length / itemsPerPage);
     
@@ -750,6 +750,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+
 
 
 
