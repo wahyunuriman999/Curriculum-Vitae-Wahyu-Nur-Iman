@@ -241,6 +241,8 @@ a.portfolio-card:hover::before { opacity: 1; }
     .exp-header { flex-direction: column; gap: 16px; }
 }
 @media (max-width: 600px) {
+    .solid-card { padding: 20px !important; }
+    .exp-card { padding: 0 !important; }
     .hero-title { font-size: 2.5rem; }
     .portfolio-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
@@ -449,4 +451,5 @@ a.portfolio-card:hover::before { opacity: 1; }
     opacity: 0;
     visibility: hidden;
 }
+
 
