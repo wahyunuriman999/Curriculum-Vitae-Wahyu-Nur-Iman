@@ -460,3 +460,7 @@ a.portfolio-card:hover::before { opacity: 1; }
 .nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
 
+
+
+.print-only { display: none; }
+@media print { .print-only { display: block !important; } }
