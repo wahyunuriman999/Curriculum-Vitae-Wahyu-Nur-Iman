@@ -665,37 +665,32 @@
                             <div style="text-align: left; font-size: 1rem; line-height: 1.8; color: var(--text-dim); margin-top: 10px;">
                                 <table style="width: 100%; border-collapse: collapse;">
                                     <tr style="border-bottom: 1px solid var(--border-light);">
-                                        <td style="padding: 10px 0; font-weight: 600; width: 40%;"><i class="fas fa-user" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> </td>
+                                        <td style="padding: 10px 0; font-weight: 600; width: 40%;"><i class="fas fa-user" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> ${currentLang === 'en' ? 'Full Name' : 'Nama'}</td>
                                         <td style="padding: 10px 0; color: var(--text-main);">Wahyu Nur Iman</td>
                                     </tr>
                                     <tr style="border-bottom: 1px solid var(--border-light);">
-                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-calendar-alt" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> </td>
-                                        <td style="padding: 10px 0; color: var(--text-main);"></td>
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-calendar-alt" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> ${currentLang === 'en' ? 'Place & Date of Birth' : 'TTL'}</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">${currentLang === 'en' ? 'Tuban, August 1, 2001' : 'Tuban, 1 Agustus 2001'}</td>
                                     </tr>
                                     <tr style="border-bottom: 1px solid var(--border-light);">
-                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-map-marker-alt" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> </td>
-                                        <td style="padding: 10px 0; color: var(--text-main);"></td>
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-map-marker-alt" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> ${currentLang === 'en' ? 'Domicile' : 'Domisili'}</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">${currentLang === 'en' ? 'Pondok Cabe, Jakarta, Indonesia' : 'Pondok Cabe, Tangerang Selatan'}</td>
                                     </tr>
                                     <tr style="border-bottom: 1px solid var(--border-light);">
-                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-id-card" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> </td>
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-id-card" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> ${currentLang === 'en' ? 'Identification' : 'Identitas'}</td>
                                         <td style="padding: 10px 0; color: var(--text-main);">KTP & Paspor</td>
                                     </tr>
                                     <tr style="border-bottom: 1px solid var(--border-light);">
-                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-flag" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> </td>
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-flag" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> ${currentLang === 'en' ? 'Nationality' : 'Warga Negara'}</td>
                                         <td style="padding: 10px 0; color: var(--text-main);">Indonesia</td>
                                     </tr>
                                     <tr style="border-bottom: 1px solid var(--border-light);">
-                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-ruler-vertical" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> Postur</td>
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-dumbbell" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> ${currentLang === 'en' ? 'Physical Profile' : 'Postur'}</td>
                                         <td style="padding: 10px 0; color: var(--text-main);">165 cm / 70 kg</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px 0; font-weight: 600; vertical-align: top;"><i class="fas fa-language" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> Bahasa</td>
-                                        <td style="padding: 10px 0; color: var(--text-main);">
-                                            <ul style="margin: 0; padding-left: 20px;">
-                                                <li>Indonesia (Native)</li>
-                                                <li>Inggris (Pasif)</li>
-                                            </ul>
-                                        </td>
+                                        <td style="padding: 10px 0; font-weight: 600;"><i class="fas fa-language" style="color: var(--accent-1); margin-right: 8px; width: 20px;"></i> ${currentLang === 'en' ? 'Languages' : 'Bahasa'}</td>
+                                        <td style="padding: 10px 0; color: var(--text-main);">${currentLang === 'en' ? 'Indonesian (Native), English (Passive)' : 'Indonesia (Native), Inggris (Pasif)'}</td>
                                     </tr>
                                 </table>
                             </div>
@@ -750,6 +745,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 repos[i].classList.add('active');
             }, 50 * (i - start));
         }
+        
+        // Refresh AOS because page height changed
+        setTimeout(() => {
+            if (typeof AOS !== 'undefined') AOS.refresh();
+        }, 100);
         
         // Update indicator
         indicator.textContent = page + ' of ' + totalPages;
