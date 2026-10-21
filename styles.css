@@ -333,6 +333,13 @@ a.portfolio-card:hover::before { opacity: 1; }
     padding: 1px;
 }
 
+/* Language visibility guarantee: the inactive language is always hidden,
+   on screen and in print, regardless of inline styles or dynamically
+   injected content. Active language lives on <html data-lang="en|id">,
+   kept in sync by toggleLanguage(). */
+html[data-lang="en"] .lang-id { display: none !important; }
+html[data-lang="id"] .lang-en { display: none !important; }
+
 /* Print Friendly */
 @media print {
     .profile-tooltip { display: none !important; }
