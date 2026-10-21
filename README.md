@@ -26,7 +26,7 @@ Memiliki kemampuan analisis, koordinasi lintas tim, dan adaptif terhadap sistem 
 ## 💼 Professional Experience
 
 ### Data Analyst
-**PT. Impact Power Mandiri (Staffinc Group)** | *Sep 2023 - Jun 2026*
+**PT. Impact Power Mandiri (Staffinc Group)** | *Sep 2023 - Sep 2026*
 * Mengelola proses end-to-end manpower project, mulai dari hiring hingga deployment.
 * Memimpin pelaksanaan product training dan training sistem (Appsheets, IDR & Istrike) untuk memastikan kesiapan operasional tim.
 * Mengembangkan dan mengelola dashboard performa serta reporting (daily, weekly, monthly) sebagai dasar evaluasi dan pengambilan keputusan.
