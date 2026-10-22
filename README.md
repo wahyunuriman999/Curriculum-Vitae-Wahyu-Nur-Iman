@@ -39,6 +39,11 @@ Memiliki kemampuan analisis, koordinasi lintas tim, dan adaptif terhadap sistem 
 * Mengelola administrasi invoicing dan memastikan kelengkapan dokumen penagihan kepada klien.
 * Menyiapkan POSM dan produksi segala kebutuhan event & memonitor kelancaran event (Sebagai PIC event).
 * **Tools Automation:** Membuat tools pribadi untuk mempermudah pekerjaan (Fuzzy Lookup & Similarity Matching Nama, Google Apps Script Automation, WEB cek rekening, LLM local & VBA Toolkit).
+* **Fuzzy Matching Automation:** Tool Python (RapidFuzz + Pandas) untuk mencocokkan nama store/manpower yang berbeda penulisannya berdasarkan similarity score, mempercepat rekonsiliasi data antar-database.
+* **ZIP-to-Excel Data Extraction:** Tool untuk mengekstrak arsip ZIP berisi banyak PDF dan menyusun informasi dari dokumen menjadi data terstruktur di Excel secara otomatis.
+* **SPG/MD Workforce Management System:** Platform AppSheet + Google Sheets untuk mengelola data tenaga kerja, jadwal, absensi GPS, kunjungan store, aktivitas lapangan, approval, KPI, dan audit log.
+* **Talent Acquisition Management System:** Sistem rekrutmen berbasis Google Apps Script, Google Sheets, dan Google Drive — database kandidat, validasi kandidat ganda (nama + nomor WhatsApp), pelacakan CV yang sudah dilihat recruiter (CV_Dilihat), upload CV/foto tervalidasi, dan dashboard recruiter.
+* **RFP-S Financial & Resource Planning System:** Aplikasi perencanaan finansial dan sumber daya berbasis Google Apps Script dengan workflow invoice, pengaturan akses per project, audit log, dan mekanisme pemulihan operasi.
 * **Project Handle:** Sinde, FKS Food, Shiseido, Diamond & Co, Beiersdorf, Skintific, Fumakilla NoMos, Greenfields, Otsuka Pocari, Kino, Garudafood.
 
 ### Medical Record Staff
