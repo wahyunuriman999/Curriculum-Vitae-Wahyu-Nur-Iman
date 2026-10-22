@@ -50,7 +50,7 @@ Memiliki kemampuan analisis, koordinasi lintas tim, dan adaptif terhadap sistem 
 * Mengelola administrasi pembuatan dan registrasi rekam medis pasien baru.
 * Melakukan input dan update data pasien ke dalam sistem secara akurat dan tepat waktu.
 * Menyiapkan dokumen pendukung seperti faktur dan surat kontrol pasien.
-* Melakukan pelaporan status pasien kepada dokter dan tim medis untuk kebutuhan tindak lanjut pemeriksaan.
+* Melakukan reporting status pasien kepada dokter dan tim medis untuk kebutuhan tindak lanjut pemeriksaan.
 * Merekap dan mengelola data status rawat pasien secara terstruktur.
 * Memastikan kelengkapan dan kerapihan dokumen rekam medis sesuai standar operasional rumah sakit.
 
@@ -71,7 +71,7 @@ Memiliki kemampuan analisis, koordinasi lintas tim, dan adaptif terhadap sistem 
 * ⚙️ **[AEGIS-Core](https://github.com/wahyunuriman999/AEGIS-Core)** - Cognitive runtime layer for AI engineering. Adds planning, memory hierarchy, and deterministic execution.
 * 🧠 **[Ruhci-Claude-Engine](https://github.com/wahyunuriman999/Ruhci-Claude-Engine)** - Deterministic Context Intelligence Engine for AI Coding Agents.
 * 🖌️ **[Designer-Mind-Skill](https://github.com/wahyunuriman999/Designer-Mind-Skill)** - Skill kustom untuk UI/UX design intelligence yang profesional.
-* 📊 **[Auto-Create-Report](https://github.com/wahyunuriman999/Auto-Create-Report)** - Sistem otomatisasi pembuatan laporan data analytics.
+* 📊 **[Auto-Create-Report](https://github.com/wahyunuriman999/Auto-Create-Report)** - Sistem otomatisasi pembuatan report data analytics.
 * ☕ **[ProgrammerMager](https://github.com/wahyunuriman999/ProgrammerMager)** - AI Agent dengan persona software engineer efisien dan anti-ribet.
 
 ---
